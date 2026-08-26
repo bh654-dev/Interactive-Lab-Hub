@@ -2,7 +2,7 @@
 
 _This project is to be done in teams of 2._
 
-**Collaborators: Aaron Huang, Shenye Wang**
+**Collaborators: Bowei Huang, Shenye Wang**
 
 **THE MASTERWORK YOU DREW FROM THE HAT: Philips Hue (Philips, 2012)**
 
