@@ -96,12 +96,10 @@ the interaction*:
 
 For your masterwork, reconstruct the interaction as a scene:
 
-- **Setting:** Where and when does this interaction happen? (a jungle, a kitchen,
-  a spaceship corridor, a nightclub, a harbor at night)
-- **Players:** Who is involved? Who else is present? Think through everyone in
-  the setting, not just the primary user.
-- **Activity:** What is happening between the players and the light?
-- **Goals:** What is each player trying to do?
+- **Setting:** The interaction takes place at home in the evening. The same room is used for different activities, including studying, relaxing, and having a drink during entertainment time.
+- **Players:** The main player is the user, who controls the Philips Hue lights through a smartphone. Other people, such as friends or roommates, may also be present and experience the changes in the lighting and atmosphere.
+- **Activity:** The user changes the lighting to match different activities. While studying, the user turns on bright white light to make the room easier to see. After studying, the user changes the light to a warmer and dimmer color to relax. Later, while making a drink and enjoying some entertainment, the user changes the light to pink or another colorful light to create a more fun atmosphere.
+- **Goals:** The user's goal is to make the same room more suitable for different activities and moods. Instead of using the same lighting all evening, the user can quickly change the brightness and color of the Philips Hue lights to create the environment they want.
 
 **Describe your setting, players, activity, and goals here.**
 
