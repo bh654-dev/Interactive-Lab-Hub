@@ -90,7 +90,9 @@ the interaction*:
   Sometimes the details of how the interaction worked are lost in history. Try filling it in with your imagination!
 
 **Describe your masterwork here, in your own words. What is the core interaction
-someone would recognize it by?**
+someone would recognize it by?** 
+
+Philips Hue is a smart lighting system that allows people to control the lights in a room through a smartphone app. Users can turn the lights on and off, adjust their brightness, and change their color. The main interaction is simple: the user makes a change on the phone, and the lighting in the physical room responds. This makes the room itself feel like part of the interface instead of the interaction only happening on a screen. One strength of Hue is that it gives users an easy way to change the mood of a space, although it also depends on an app and compatible smart lights.
 
 ## Part A. Plan
 
