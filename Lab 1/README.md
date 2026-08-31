@@ -148,6 +148,8 @@ masterwork should you consider layering in a second modality (sound, vibration,
 motion). If in doubt, keep polishing the light. The other modalities are next
 week's business.
 
+We used Tinkerbelle to prototype the Philips Hue light interaction. One device acted as the controller while a smartphone acted as the light. We tested different colors and brightness levels to recreate how Philips Hue allows users to change the atmosphere of a room for different activities.
+
 ## Part D. Wizard the Device
 
 Set up a "wizard" arrangement so one person can secretly drive the light while
