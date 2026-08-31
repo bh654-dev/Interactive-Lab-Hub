@@ -191,6 +191,8 @@ who doesn't should come away understanding what it's famous for. How might you i
 
 [Watch the Philips Hue demo video](philips_hue_demo.mp4)
 
+*If the video does not preview on GitHub, click "View raw" to play it.*
+
 **Please indicate who you collaborated with on this lab.** Be generous in
 acknowledging their contributions, and credit any other influences (YouTube,
 Github, Twitter, a friend who lent you a lamp) that informed your recreation.
