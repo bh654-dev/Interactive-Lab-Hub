@@ -180,10 +180,15 @@ who doesn't should come away understanding what it's famous for. How might you i
 
 **Include your video here.**
 
+### Philips Hue Interaction Demo
+
+[Watch the Philips Hue demo video](philips_hue_demo.mp4)
+
 **Please indicate who you collaborated with on this lab.** Be generous in
 acknowledging their contributions, and credit any other influences (YouTube,
 Github, Twitter, a friend who lent you a lamp) that informed your recreation.
 
+I collaborated with Shenye Wang on this lab. We worked together to recreate the Philips Hue interaction, including planning the interaction scenarios, developing the light prototype, and recording the final video demonstration.
 ---
 
 # Part 2 — ReMastering the light
