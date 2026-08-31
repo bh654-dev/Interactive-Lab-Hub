@@ -156,6 +156,7 @@ building any real electronics. (Zoom works well for recording; you can pin the
 video feed of whichever scene you want to capture.)
 
 **Include your first attempts at recording the wizarded set-up here.**
+We used a wizard setup where one person secretly controlled the light while the other person interacted with it in the scene. We tested different colors and brightness levels to recreate the Philips Hue experience and see how the lighting changes affected the mood of the space.
 
 ## Part E. (optional) Costume the Device
 
