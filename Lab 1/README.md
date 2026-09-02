@@ -216,6 +216,8 @@ https://github.com/yw2895-ship-it/Interactive-Lab-Hub/blob/Fall2026/Lab%201/READ
 
 **Summarize the feedback you got from your partners here.**
 
+I watched your Philips Hue demo and clearly understood how the user changes the room lighting through a phone to support different activities and moods. The bright white light for studying, warmer light for relaxing, and colorful light for entertainment made the interaction easy to follow. I guessed that your masterwork was Philips Hue because the main focus was the connection between the phone controls and the physical atmosphere of the room. The user’s goal seems to be quickly adapting one shared space to different needs without changing the room itself. One thing I was curious about is whether you could show the phone control screen more clearly in the video, so viewers can better see what action causes each lighting change.
+
 ## Remix, Update, or Critique the Master
 
 Now that you understand your masterwork from the inside, respond to it. Do the
