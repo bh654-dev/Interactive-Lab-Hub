@@ -211,6 +211,9 @@ guess the masterwork and the goals of the characters, and ask about anything tha
 wasn't clear.
 
 **Who were the other groups you kibitzed with? Add links to their project pages here.**
+
+https://github.com/yw2895-ship-it/Interactive-Lab-Hub/blob/Fall2026/Lab%201/README.md
+
 **Summarize the feedback you got from your partners here.**
 
 ## Remix, Update, or Critique the Master
