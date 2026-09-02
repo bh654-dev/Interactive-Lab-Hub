@@ -214,6 +214,7 @@ wasn't clear.
 
 1. https://github.com/yw2895-ship-it/Interactive-Lab-Hub/blob/Fall2026/Lab%201/README.md
 2. https://github.com/Mmmmmmarius/Interactive-Lab-Hub/blob/Fall2026/Lab%201/Lab%201a.pdf
+3. https://github.com/jianingli189/Interactive-Lab-Hub/blob/Fall2026/Lab%201/README.md
 
 **Summarize the feedback you got from your partners here.**
 
