@@ -222,7 +222,9 @@ wasn't clear.
 
 2. I really appreciate your ideation and the spinoff of your Philips hue project. I think it took a very novel and modernized approach while thorrowlly considered the practical usage of the project. The storyboard is very well written with great visualization on the outcome and its direct impact.
 
-3. 
+3. I really like the storyboards you made, which show three different usage settings of the Hue. The three settings you made are very common in life, which shows practical functions of the interaction you guys remade.
+I’m curious about one question, is this light portable, like in your video, so the user can carry it to different places, or is it more of an intelligent piece of furniture that is kept in the same place for different usage? The answer to this question might change some of the functions of your interactive device.
+And I also think about other inputs you may add. For example, why didn’t you choose buttons, which are very straightforward to use? Also, might speaking to the light be even more convenient in some settings? It’s an interesting thing to think about.
 
 ## Remix, Update, or Critique the Master
 
