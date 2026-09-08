@@ -247,6 +247,25 @@ We chose this idea because sometimes using a phone to control a light is not the
 
 This remix also responds to one of the weaknesses we identified in the original design: its dependence on a phone or other controls. By adding motion as another input modality, users have a more direct way to interact with the light.
 
+### Storyboard
+
+For our new interaction, we created a storyboard to show how gesture control could be useful in everyday situations. The main idea is that users can control the light with a simple hand wave without needing to reach for their phone.
+
+![Gesture Control Storyboard](gesture_storyboard.png)
+
+### Prototype and Interaction
+
+Our prototype demonstrates a simple gesture-based interaction with the Philips Hue light. When the user waves their hand near the light, the light changes between ON and OFF.
+
+The interaction follows this sequence:
+
+**Hand Wave → Motion Detected → Light Toggles ON/OFF**
+
+### Demo Video
+
+The demo video shows our remixed interaction in action. The user waves their hand to control the light without using a phone or physical button.
+
+[Watch the Gesture-Controlled Philips Hue Demo](gesture_hue_demo.mp4)
 
 2. **Update it.** Redesign the piece for today's context, or for a setting its
    creators never imagined (the piece with roommates in the room, with children
