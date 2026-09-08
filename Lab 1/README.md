@@ -235,6 +235,19 @@ combine them):
 1. **Remix the modality.** Your recreation no longer has to (just) use light. Use
    vibration, sound, motion, heat — whatever best carries the interaction. Feel
    free to fork and modify the Tinkerbelle code. (Add your updates to this lab's folder!)
+
+   For our remix, we decided to add **motion/gesture** as a new way to interact with the Philips Hue light. Instead of always using a phone or a physical button, the user can simply wave their hand near the light to turn it on or off.
+
+Gesture Interaction
+
+- Wave your hand once → Turn the light **ON**
+- Wave your hand again → Turn the light **OFF**
+
+We chose this idea because sometimes using a phone to control a light is not the most convenient option. For example, the user's hands might be occupied, or their phone might not be nearby. A simple hand gesture makes the interaction faster and more natural.
+
+This remix also responds to one of the weaknesses we identified in the original design: its dependence on a phone or other controls. By adding motion as another input modality, users have a more direct way to interact with the light.
+
+
 2. **Update it.** Redesign the piece for today's context, or for a setting its
    creators never imagined (the piece with roommates in the room, with children
    present, on a phone, in a car).
