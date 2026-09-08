@@ -217,14 +217,16 @@ wasn't clear.
 3. https://github.com/jianingli189/Interactive-Lab-Hub/blob/Fall2026/Lab%201/README.md
 
 **Summarize the feedback you got from your partners here.**
+### Partner Feedback Summary
 
-1. I watched your Philips Hue demo and clearly understood how the user changes the room lighting through a phone to support different activities and moods. The bright white light for studying, warmer light for relaxing, and colorful light for entertainment made the interaction easy to follow. I guessed that your masterwork was Philips Hue because the main focus was the connection between the phone controls and the physical atmosphere of the room. The user’s goal seems to be quickly adapting one shared space to different needs without changing the room itself. One thing I was curious about is whether you could show the phone control screen more clearly in the video, so viewers can better see what action causes each lighting change.
+**Feedback 1:**  
+The first partner thought our Philips Hue demo clearly showed how the user can change the lighting to support different activities and moods. They specifically mentioned that the bright white light for studying, warm light for relaxing, and colorful light for entertainment made the interaction easy to understand. From the video, they were also able to recognize that our masterwork was Philips Hue and understood that the main goal was to let users quickly adapt the same space for different needs. One suggestion they gave us was to show the phone control more clearly in the video. This would help viewers better understand what action the user takes and how that action causes each change in the lighting.
 
-2. I really appreciate your ideation and the spinoff of your Philips hue project. I think it took a very novel and modernized approach while thorrowlly considered the practical usage of the project. The storyboard is very well written with great visualization on the outcome and its direct impact.
+**Feedback 2:**  
+The second partner liked the overall idea and direction of our Philips Hue project. They thought our approach was creative and modern while still considering how the interaction could be useful in real situations. They especially liked our storyboards and felt that the visualizations clearly communicated the different scenarios, the lighting outcomes, and the direct impact of those changes on the user. Their feedback showed us that the connection between our interaction idea and its practical everyday use was communicated successfully.
 
-3. I really like the storyboards you made, which show three different usage settings of the Hue. The three settings you made are very common in life, which shows practical functions of the interaction you guys remade.
-I’m curious about one question, is this light portable, like in your video, so the user can carry it to different places, or is it more of an intelligent piece of furniture that is kept in the same place for different usage? The answer to this question might change some of the functions of your interactive device.
-And I also think about other inputs you may add. For example, why didn’t you choose buttons, which are very straightforward to use? Also, might speaking to the light be even more convenient in some settings? It’s an interesting thing to think about.
+**Feedback 3:**  
+The third partner liked how our storyboards showed three different everyday uses of Philips Hue. They thought studying, relaxing, and entertainment were common situations that demonstrated the practical value of changing the lighting for different activities. They also raised an important question about whether our light is supposed to be portable and carried to different places or stay in one location as an intelligent part of the room. They pointed out that this design decision could change how users interact with the device and what functions it should have. In addition, they encouraged us to think about other possible input methods. They asked why we did not use a physical button, which could provide a very direct interaction, and suggested that voice control might be even more convenient in some situations. This feedback encouraged us to think beyond phone control and consider more natural and flexible ways for users to interact with the light.
 
 ## Remix, Update, or Critique the Master
 
