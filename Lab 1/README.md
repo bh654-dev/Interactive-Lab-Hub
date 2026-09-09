@@ -266,11 +266,11 @@ The interaction follows this sequence:
 
 The photos below show our prototype and its different lighting states during the interaction.
 
-![Prototype 1](Prototype1.jpg)
-
-![Prototype 2](Prototype2.jpg)
-
-![Prototype 3](Prototype3.jpg)
+<p align="center">
+  <img src="Prototype1.jpg" width="30%">
+  <img src="Prototype2.jpg" width="30%">
+  <img src="Prototype3.jpg" width="30%">
+</p>
 
 ### Demo Video
 
