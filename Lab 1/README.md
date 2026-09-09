@@ -272,6 +272,14 @@ The photos below show our prototype and its different lighting states during the
   <img src="Prototype3.jpg" width="30%">
 </p>
 
+### User Testing
+
+We asked a classmate to try our gesture-based prototype. We first explained that the light could be controlled through hand gestures and asked the user to try turning it on and off.
+
+The user was able to understand the interaction and successfully use the hand-wave gesture to control the light. During testing, we noticed that the gesture needed to be clear and close enough to the sensor to be detected consistently.
+
+Based on this test, we kept the ON/OFF interaction simple and made the hand-wave gesture more deliberate so that the system could respond more consistently.
+
 ### Demo Video
 
 The demo video shows our remixed interaction in action. The user waves their hand to control the light without using a phone or physical button.
