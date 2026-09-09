@@ -253,7 +253,7 @@ This remix also responds to one of the weaknesses we identified in the original 
 
 For our new interaction, we created a storyboard to show how gesture control could be useful in everyday situations. The main idea is that users can control the light with a simple hand wave without needing to reach for their phone.
 
-![Gesture Control Storyboard](gesture_storyboard.png)
+![Storyboard](storyboards_final.jpg)
 
 ### Prototype and Interaction
 
