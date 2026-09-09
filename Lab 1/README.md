@@ -262,12 +262,22 @@ Our prototype demonstrates a simple gesture-based interaction with the Philips H
 The interaction follows this sequence:
 
 **Hand Wave → Motion Detected → Light Toggles ON/OFF**
+### Prototype Photos
+
+The photos below show our prototype and its different lighting states during the interaction.
+
+![Prototype 1](Prototype1.jpg)
+
+![Prototype 2](Prototype2.jpg)
+
+![Prototype 3](Prototype3.jpg)
 
 ### Demo Video
 
 The demo video shows our remixed interaction in action. The user waves their hand to control the light without using a phone or physical button.
 
 [Watch the final prototype video](philips_hue_final.mp4)
+
 *If the video does not preview on GitHub, click "View raw" to play it.*
 
 2. **Update it.** Redesign the piece for today's context, or for a setting its
