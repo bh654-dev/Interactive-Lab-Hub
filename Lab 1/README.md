@@ -267,7 +267,7 @@ The interaction follows this sequence:
 
 The demo video shows our remixed interaction in action. The user waves their hand to control the light without using a phone or physical button.
 
-[Watch the Gesture-Controlled Philips Hue Demo](gesture_hue_demo.mp4)
+[Watch the final prototype video](philips_hue_final.mp4)
 
 2. **Update it.** Redesign the piece for today's context, or for a setting its
    creators never imagined (the piece with roommates in the room, with children
