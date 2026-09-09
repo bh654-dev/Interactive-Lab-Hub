@@ -101,7 +101,6 @@ For your masterwork, reconstruct the interaction as a scene:
 - **Activity:** The user changes the lighting to match different activities. While studying, the user turns on bright white light to make the room easier to see. After studying, the user changes the light to a warmer and dimmer color to relax. Later, while making a drink and enjoying some entertainment, the user changes the light to pink or another colorful light to create a more fun atmosphere.
 - **Goals:** The user's goal is to make the same room more suitable for different activities and moods. Instead of using the same lighting all evening, the user can quickly change the brightness and color of the Philips Hue lights to create the environment they want.
 
-**Describe your setting, players, activity, and goals here.**
 
 Now **sketch a 3 storyboards** of the interaction you are recreating. (The number may depend on the thing you drew, but stretch your thinking!) They
 don't need to be beautiful, but they must capture and communicate not only the behavior of the light, but how it affects
