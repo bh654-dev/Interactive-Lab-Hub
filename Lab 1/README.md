@@ -304,8 +304,6 @@ The demo video shows our remixed Philips Hue interaction in action. The user wav
 
 [Watch the final prototype video](https://youtu.be/E6l1RT8QcY4)
 
----
-
 *If the video does not preview on GitHub, click "View raw" to play it.*
 
 2. **Update it.** Redesign the piece for today's context, or for a setting its
