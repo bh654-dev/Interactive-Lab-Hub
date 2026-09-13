@@ -77,6 +77,9 @@ The support for password authentication of GitHub was removed on August 13, 2021
 
 Following the steps listed [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) from GitHub to set up a token. Depends on your preference, you can set up and select the scopes, or permissions, you would like to grant the token. This token will act as your GitHub password later when you use the terminal on your Pi to sync files with your lab-hub repo.
 
+### Part A Completion
+
+I successfully connected to my Raspberry Pi through SSH, created and activated a Python virtual environment, and configured my Git name and Cornell email. I also created a GitHub Personal Access Token for cloning and pushing my Lab Hub repository from the Pi.
 
 ## Part B. 
 ### Try out the Command Line Clock
