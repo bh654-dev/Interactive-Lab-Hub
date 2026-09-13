@@ -1,6 +1,6 @@
 # Interactive Prototyping: The Clock of Pi
-**Shengye Wang,
-Bowei Huang**
+**Bowei Huang bh654,
+Shingle Wang**
 
 Does it feel like time is moving strangely during this semester?
 
