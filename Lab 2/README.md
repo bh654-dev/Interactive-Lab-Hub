@@ -188,6 +188,13 @@ Option 3. A nowadays often preferred method is to use Microsoft [VS code to remo
 
 Pro Tip: Using tools like [code-server](https://coder.com/docs/code-server/latest) you can even setup a VS Code coding environment hosted on your raspberry pi and code through a web browser on your tablet or smartphone! 
 
+### My Display Clock
+
+I updated `screen_clock.py` to display the current date and time on the MiniPiTFT. The clock updates every second.
+
+<img width="300" alt="clock_red" src="https://github.com/user-attachments/assets/664399a8-f234-42f8-b606-602b49085fea" />
+
+
 ## Part E. Read Part 2. Sketch and brainstorm further interactions and features you would like for your clock.
 
 One potential source of ideas might be thinking about other clocks and timekeeping devices for inspiration.
