@@ -201,7 +201,8 @@ The cat has two meal times and three play sessions during the day. Between these
 The two buttons on the MiniPiTFT can also be used for interaction. One button can switch between different screens, while the other can respond to the cat's current need, such as feeding the cat or playing with it.
 
 
-** Insert ideas, sketches, [Verplank diagrams](https://ccrma.stanford.edu/courses/250a-fall-2004/IDSketchbok.pdf)), storyboards for your ideas **
+<img width="1280" height="1707" alt="WechatIMG327" src="https://github.com/user-attachments/assets/a2525895-87ad-4ce5-8c25-7cd6158500cb" />
+<img width="1280" height="1707" alt="WechatIMG325" src="https://github.com/user-attachments/assets/9a09c01d-4d44-41cc-b9c6-d1a298fdd410" />
 
 
 
