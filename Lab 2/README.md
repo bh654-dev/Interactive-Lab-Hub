@@ -192,6 +192,15 @@ Another might be novel units of time. How do you measure a year? [In daylights? 
 We strongly discourage literal digital or analog clock display: Be creative.
 
 
+### Cat Clock
+
+For my clock concept, I wanted to represent time through a cat's daily routine instead of using a traditional digital or analog clock. The Cat Clock shows what the cat currently needs throughout the day, such as eating, playing, resting, or sleeping.
+
+The cat has two meal times and three play sessions during the day. Between these activities, the cat can be resting, waiting, or sleeping. Instead of constantly checking the exact time, the user can understand the part of the day by looking at the cat's current activity.
+
+The two buttons on the MiniPiTFT can also be used for interaction. One button can switch between different screens, while the other can respond to the cat's current need, such as feeding the cat or playing with it.
+
+
 ** Insert ideas, sketches, [Verplank diagrams](https://ccrma.stanford.edu/courses/250a-fall-2004/IDSketchbok.pdf)), storyboards for your ideas **
 
 
