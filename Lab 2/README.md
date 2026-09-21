@@ -1,3 +1,7 @@
+
+
+https://github.com/user-attachments/assets/268e18ba-9d66-4071-8a42-91f9e2939c3b
+
 # Interactive Prototyping: The Clock of Pi
 **Bowei Huang(bh654),
 Shengye Wang**
@@ -429,6 +433,10 @@ The earlier barebones version is kept separately in:
 Keeping both versions allows us to show how the project developed from a simple interaction into the complete PiClock.
 
 \*\*\***Take a video of your PiClock.**\*\*\*
+
+
+
+https://github.com/user-attachments/assets/7e4f93be-ae23-4eb2-9493-425e4277d66d
 
 
 
