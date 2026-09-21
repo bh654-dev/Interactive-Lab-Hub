@@ -1,7 +1,3 @@
-
-
-https://github.com/user-attachments/assets/268e18ba-9d66-4071-8a42-91f9e2939c3b
-
 # Interactive Prototyping: The Clock of Pi
 **Bowei Huang(bh654),
 Shengye Wang**
