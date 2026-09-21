@@ -233,7 +233,7 @@ The two buttons on the MiniPiTFT can also be used for interaction. One button ca
 2. Look at and give feedback on the Part E. for at least 3 other people in the class and get 3 people to comment on your Part E!)
 **Put the feedback for your ideas here.**
 
-## Update your Lab Hub
+Three groups gave us feedback on our Virtual Cat Clock idea. They thought using a cat’s daily routine to represent time was creative and easy to understand. They also liked the different cat states and the button interactions because they make the clock feel more engaging. One area for improvement is to make the transitions between different states clearer and provide more obvious visual feedback when the user interacts with the cat.
 
 [Update your Lab Hub](pull_updates/README.md) to get the latest content and requirements for Part 2.
 
