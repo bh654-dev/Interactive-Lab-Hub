@@ -223,6 +223,9 @@ The two buttons on the MiniPiTFT can also be used for interaction. One button ca
 
 
 **Put the names of the people you gave feedback to here. (Even better, add links to their repos here!)**
+Tony Wang https://github.com/TonyW755/Interactive-Lab-Hub/blob/Fall2026/Lab%202/README.md<br>
+Yangchen Jin https://github.com/MortalJin/Interactive-Lab-Hub/tree/Fall2026/Lab%202<br>
+Jindi Chai & Yilin Wu https://github.com/yw2895-ship-it/Interactive-Lab-Hub/blob/Fall2026/Lab%202/README.md<br>
 
 # Lab 2 Part 2
 
@@ -234,6 +237,10 @@ The two buttons on the MiniPiTFT can also be used for interaction. One button ca
 **Put the feedback for your ideas here.**
 
 Three groups gave us feedback on our Virtual Cat Clock idea. They thought using a cat’s daily routine to represent time was creative and easy to understand. They also liked the different cat states and the button interactions because they make the clock feel more engaging. One area for improvement is to make the transitions between different states clearer and provide more obvious visual feedback when the user interacts with the cat.
+
+1. I also have a cat, so I found your project very practical and relatable. Kittens need regular feeding times and enough playtime every day, but I sometimes forget to put out food or get too busy to play with my cat for long enough. This clock could be a really helpful reminder for both feeding and playtime, and it could make it easier for cat owners to maintain a consistent routine for their pets. One suggestion would be to make the reminders customizable. For example, users could set different feeding and playtime schedules, since each cat has different routines and needs. It could also be helpful if the clock used different light colors or patterns for feeding versus playtime, so the reminder is easy to understand at a glance. (Yilin Wu)
+2. I really like the idea of showing time through what the cat is doing instead of just showing numbers. One thing I was a little confused about at first was what each button does. Maybe you could add a small label or icon on the screen so the user knows which button changes the screen and which one interacts with the cat. I think that would make it easier to use without needing an explanation.
+3. I think the different cat activities are cute, especially the feeding and playing parts. It might be nice if the cat reacted a little differently depending on what the user does, instead of always showing the same response. You could also show what the cat is going to do next or when the next activity will happen. That would make it feel more like taking care of a virtual pet and also make the clock more useful.
 
 ## Update your Lab Hub
 
