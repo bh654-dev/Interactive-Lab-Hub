@@ -259,6 +259,12 @@ The code for our barebones prototype is in `cat_clock_1.py`.
 
 \*\*\***Take a video of your barely modified PiClock.**\*\*\*
 
+
+
+https://github.com/user-attachments/assets/75cab025-636c-45fb-9124-7f4c03797d87
+
+
+
 After you edit and work on the scripts for Lab 2, the files should be upload back to your own GitHub repo! You can push to your personal github repo by adding the files here, commiting and pushing.
 
 ```
