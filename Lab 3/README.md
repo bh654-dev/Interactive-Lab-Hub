@@ -157,6 +157,8 @@ Speak, pause, and watch it transcribe. Now change the endpointing threshold — 
 
 There is no correct value. A system that takes drink orders and a system that listens to someone think out loud want very different thresholds, and the right one depends on what your users are doing with their pauses.
 
+At 0.2 seconds, the system split my sentence after “I want to have,” before I finished saying what I wanted. At 0.7 seconds, it treated “Yeah” as a complete turn and put the following words in another turn. Even at 1.5 seconds, my longer pause split the sentence. The longer threshold also made me wait before seeing a response, so the device felt slower. I would choose a threshold based on how much users normally pause while answering.
+
 ### The complete loop
 
 `echo_bot.py` puts the pieces together: it listens, endpoints, transcribes, and speaks a reply through Piper. The dialogue policy is deliberately trivial — it repeats what you said — so that everything you notice is a property of the timing rather than the content.
