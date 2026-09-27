@@ -188,16 +188,16 @@ I designed a voice-controlled robot vacuum for someone who wants to clean a spec
 
 ### Imagined dialogue
 
-User: “Clean the living room.”
-Device: “Standard or quiet mode?”
-*The device waits until the user has been silent for 1.0 second.*
-User: “Quiet.”
-Device: “Start cleaning the living room in quiet mode?”
-*The device waits until the user has been silent for 1.0 second.*
-User: “Yes.”
-Device: “Starting now.”
+- User: “Clean the living room.”
+- Device: “Standard or quiet mode?”
+- *Wait until the user has been silent for 1.0 second.*
+- User: “Quiet.”
+- Device: “Start cleaning the living room in quiet mode?”
+- *Wait until the user has been silent for 1.0 second.*
+- User: “Yes.”
+- Device: “Starting now.”
 
-If the device does not understand the room, it asks: “Which room would you like me to clean?” and waits for another answer.
+If the device does not understand the room, it asks, “Which room would you like me to clean?” and waits for another answer.
 
 
 ## E. Acting out the dialogue
