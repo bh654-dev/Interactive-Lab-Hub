@@ -175,9 +175,30 @@ Storyboard and/or use a Verplank diagram to design a speech-enabled device. (Stu
 
 Write out what you imagine the dialogue to be. Use cards, post-its, or whatever method helps you develop alternatives or group responses.
 
+<img width="300" height="300" alt="WechatIMG338" src="https://github.com/user-attachments/assets/f66b0989-ee4e-496e-863c-80a3e9d2e684" />
+
+
 \*\***Please describe and document your process.**\*\*
 
 Your script should include the pauses. Where does your device wait, and for how long? You now know from Part C that this is a parameter you have to choose, not something that happens for free.
+
+### Design process
+
+I designed a voice-controlled robot vacuum for someone who wants to clean a specific room without opening an app. I started with the command “Clean the living room,” then added a choice of cleaning mode and a confirmation before the vacuum starts. I also included an error response for when the vacuum does not understand the room. In Part C, the 0.2-second silence threshold cut my sentence short, so I chose 1.0 second of silence for this design. This timing is a starting point that I would check with a user.
+
+### Imagined dialogue
+
+User: “Clean the living room.”
+Device: “Standard or quiet mode?”
+*The device waits until the user has been silent for 1.0 second.*
+User: “Quiet.”
+Device: “Start cleaning the living room in quiet mode?”
+*The device waits until the user has been silent for 1.0 second.*
+User: “Yes.”
+Device: “Starting now.”
+
+If the device does not understand the room, it asks: “Which room would you like me to clean?” and waits for another answer.
+
 
 ## E. Acting out the dialogue
 
