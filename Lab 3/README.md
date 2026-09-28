@@ -135,6 +135,8 @@ Available sizes, smallest first: `tiny.en`, `base.en`, `small.en`, `medium.en`. 
 
 <img width="300" height="300" alt="截屏2026-09-27 晚上10 36 44" src="https://github.com/user-attachments/assets/5e862a23-f43a-4448-acae-916cf243aa80" />
 
+I tested tiny.en and base.en using the same 5-second recording. Tiny.en had a real-time factor of 0.21x, but it transcribed “Lab 3” as “lap three.” Base.en had a real-time factor of 0.36x and correctly recognized “Lab 3.” I think the additional delay of base.en is worth it because it is still faster than real time and gives better accuracy.
+
 
 
 \*\***Write your own script that verbally asks for a numerical input (a phone number, zipcode, number of pets) and records the answer the respondent provides.**\*\* Numbers are a good stress test — transcription systems make characteristic errors on digit strings, and you will want to know what they are before you design around them.
