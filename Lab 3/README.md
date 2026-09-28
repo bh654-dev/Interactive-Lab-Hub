@@ -131,6 +131,12 @@ Available sizes, smallest first: `tiny.en`, `base.en`, `small.en`, `medium.en`. 
 
 \*\***Record a few seconds of your own speech (`arecord -d 5 -f cd -c 1 -r 16000 test.wav`) and transcribe it with at least two model sizes. Report the real-time factor for each. At what point does the accuracy improvement stop being worth the delay, for a system that has to answer you?**\*\*
 
+<img width="300" height="300" alt="截屏2026-09-27 晚上10 36 20" src="https://github.com/user-attachments/assets/2320a069-90e8-44f5-bff5-3cc5f8748e69" />
+
+<img width="300" height="300" alt="截屏2026-09-27 晚上10 36 44" src="https://github.com/user-attachments/assets/5e862a23-f43a-4448-acae-916cf243aa80" />
+
+
+
 \*\***Write your own script that verbally asks for a numerical input (a phone number, zipcode, number of pets) and records the answer the respondent provides.**\*\* Numbers are a good stress test — transcription systems make characteristic errors on digit strings, and you will want to know what they are before you design around them.
 
 For my five-second recording, tiny.en had a real-time factor of 0.21x and transcribed “testing testing 1, 2, 3.” base.en had a real-time factor of 0.37x and transcribed “Testing, testing, one, two, three.” Both got the words and numbers right. For a system that needs to answer quickly, I would use tiny.en here because base.en took longer without a meaningful accuracy improvement on this recording.
