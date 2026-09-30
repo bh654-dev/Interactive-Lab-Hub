@@ -121,7 +121,9 @@ def main():
                 f"SYSTEM: Speaking... "
                 f"(ASR {time.perf_counter() - started:.2f}s)"
             )
+            stream.stop()
             speaker.say(reply)
+            stream.start()
             print(f"SYSTEM said: {reply}\n", flush=True)
 
 
