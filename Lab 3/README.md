@@ -233,6 +233,35 @@ For Part 2, you will redesign the interaction with the speech-enabled device usi
 3. Make a new storyboard, diagram and/or script based on these reflections.
 4. (optional) Integrate [input devices](inputs.md) in the system
 
+### Revised vacuum interaction plan
+
+In our Part 1 acting exercise, the participant said “clean the table” instead of naming a room. We changed the dialogue so the vacuum asks what the user means before starting. It also confirms the room and cleaning mode. We chose 1.0 second of silence to end a turn as a starting point based on our Part 1 timing experiments. We will check whether this timing works during testing.
+
+The Pi uses a microphone to hear the participant and a speaker to reply. The terminal shows when the system is listening, thinking, or speaking. A group member operates a hidden controller and chooses the reply based on what the participant actually says. Cleaning is simulated; the Pi does not move or vacuum.
+
+### Revised dialogue / storyboard script
+
+1. Device: “I am ready. Tell me what to clean.”
+2. User: “Clean the table.” After 1.0 second of silence, the device starts processing.
+3. Device: “Do you mean the area around the table in the living room?”
+4. User: “Yes.” Device: “Would you like standard or quiet mode?”
+5. User: “Quiet.” Device: “Should I start cleaning the living room in quiet mode?”
+6. User: “Yes.” Device: “Starting now. I am cleaning the living room.” The controller changes the simulated status to `CLEANING`.
+7. User: “How is it going?” Device: “I am still cleaning the living room.”
+8. User: “Stop.” Device: “Cleaning stopped.” The controller changes the status to `STOPPED`.
+
+If the user says “no” when asked about the table, the device asks which room to clean. If it does not understand a response, it asks the user to repeat it. This script shows the interaction we intend to test; participants may say something different.
+
+### How the prototype and controller work
+
+The participant speaks into the Pi’s USB microphone. After each spoken turn, the hidden operator sees the transcription and chooses the device’s next response in the controller terminal. The Pi speaks that response through the USB speaker. The operator can also type a custom response if the participant says something unexpected.
+
+To run the prototype from the Lab 3 virtual environment:
+
+```bash
+cd ~/Interactive-Lab-Hub/'Lab 3'/speech-scripts
+python vacuum_wizard.py --min-silence 1.0
+
 ## Prototype your system
 
 The system should:
