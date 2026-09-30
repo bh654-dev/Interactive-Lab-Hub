@@ -233,11 +233,15 @@ For Part 2, you will redesign the interaction with the speech-enabled device usi
 3. Make a new storyboard, diagram and/or script based on these reflections.
 4. (optional) Integrate [input devices](inputs.md) in the system
 
-### Revised vacuum interaction plan
+### What we want to improve
 
-In our Part 1 acting exercise, the participant said “clean the table” instead of naming a room. We changed the dialogue so the vacuum asks what the user means before starting. It also confirms the room and cleaning mode. We chose 1.0 second of silence to end a turn as a starting point based on our Part 1 timing experiments. We will check whether this timing works during testing.
+In our Part 1 acting exercise, the participant said “clean the table” instead of naming a room. Our original dialogue did not explain how the vacuum would handle that request. In the revised version, the device asks whether the user means the area around the table in the living room. It then asks for a cleaning mode and confirms the full request before starting.
 
-The Pi uses a microphone to hear the participant and a speaker to reply. The terminal shows when the system is listening, thinking, or speaking. A group member operates a hidden controller and chooses the reply based on what the participant actually says. Cleaning is simulated; the Pi does not move or vacuum.
+We chose 1.0 second of silence to end a turn as a starting point based on our Part 1 timing experiments. We will check whether this gives participants enough time to finish speaking.
+
+### Other ways to show what the device is doing
+
+The Pi uses a microphone to hear the participant and a speaker to reply. The terminal shows `Listening...`, `Thinking...`, and `Speaking...` so we can observe when the device is ready, processing speech, or replying. The controller is operated by a group member out of the participant’s view. Cleaning is simulated; the Pi does not move or vacuum.
 
 ### Revised dialogue / storyboard script
 
@@ -254,51 +258,16 @@ If the user says “no” when asked about the table, the device asks which room
 
 ### How the prototype and controller work
 
-The participant speaks into the Pi’s USB microphone. After each spoken turn, the hidden operator sees the transcription and chooses the device’s next response in the controller terminal. The Pi speaks that response through the USB speaker. The operator can also type a custom response if the participant says something unexpected.
+The participant speaks into the Pi’s USB microphone. After each spoken turn, the hidden operator sees the transcription and chooses the device’s next response in the controller terminal. The Pi speaks that response through the USB speaker. The operator can type a custom response if the participant says something unexpected.
 
 To run the prototype from the Lab 3 virtual environment:
 
 ```bash
 cd ~/Interactive-Lab-Hub/'Lab 3'/speech-scripts
 python vacuum_wizard.py --min-silence 1.0
+```
 
-## Prototype your system
-
-The system should:
-* use the Raspberry Pi
-* use one or more sensors
-* require participants to speak to it
-
-*Document how the system works.*
-
-*Include videos or screencaptures of both the system and the controller.*
-
-## Test the system
-
-Try to get at least two people to interact with your system. (Ideally, you would inform them that there is a wizard *after* the interaction, but we recognize that can be hard.)
-
-Answer the following:
-
-### What worked well about the system and what didn't?
-\*\**your answer here*\*\*
-
-### What worked well about the controller and what didn't?
-\*\**your answer here*\*\*
-
-### What lessons can you take away from the WoZ interactions for designing a more autonomous version of the system?
-\*\**your answer here*\*\*
-
-### How could you use your system to create a dataset of interaction? What other sensing modalities would make sense to capture?
-\*\**your answer here*\*\*
-
-<details>
-  <summary><strong>Submission Cleanup Reminder (Click to Expand)</strong></summary>
-
-  **Before submitting your README.md:**
-  - This readme.md file has a lot of extra text for guidance.
-  - Remove all instructional text and example prompts from this file.
-  - You may either delete these sections or use the toggle/hide feature in VS Code to collapse them for a cleaner look.
-  - Your final submission should be neat, focused on your own work, and easy to read for grading.
+The controller offers these choices: `room`, `clarify`, `mode`, `confirm`, `start`, `progress`, `pause`, `resume`, `stop`, `repeat`, and `custom`. The `CLEANING` status is only simulated.ion should be neat, focused on your own work, and easy to read for grading.
 </details>
 
 ## Prototype your system
@@ -339,3 +308,4 @@ Answer the following:
   - You may either delete these sections or use the toggle/hide feature in VS Code to collapse them for a cleaner look.
   - Your final submission should be neat, focused on your own work, and easy to read for grading.
 </details>
+
