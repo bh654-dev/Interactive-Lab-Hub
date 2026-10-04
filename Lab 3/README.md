@@ -270,6 +270,10 @@ python vacuum_wizard.py --min-silence 1.0
 The controller offers these choices: `room`, `clarify`, `mode`, `confirm`, `start`, `progress`, `pause`, `resume`, `stop`, `repeat`, and `custom`. The `CLEANING` status is only simulated.ion should be neat, focused on your own work, and easy to read for grading.
 </details>
 
+### Revised storyboard
+<img width="300" height="300" alt="4581791148428_ pic" src="https://github.com/user-attachments/assets/38030718-78e4-4f9b-a8b4-92a6bbf66b09" />
+
+
 ## Prototype your system
 
 The system should:
