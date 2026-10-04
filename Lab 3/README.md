@@ -281,9 +281,7 @@ The system should:
 * use one or more sensors
 * require participants to speak to it
 
-*Document how the system works.*
-
-*Include videos or screencaptures of both the system and the controller.*
+[Watch our voice-controlled vacuum prototype](https://youtu.be/1c3hi0LVD9k)
 
 ## Test the system
 
