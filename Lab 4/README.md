@@ -285,32 +285,30 @@ As you develop your Feast Automata concept, consider where the sensor and actuat
 
 **\*\*\*Draw 5 sketches that explore different physical arrangements for your sensing and actuation.\*\*\***
 
+Five Design Sketches
+We explored five physical arrangements for the same interaction:
+1. Side Buddy: The character stands beside the cup on a shared base.
+2. Backboard Buddy: The character is attached to a vertical backboard behind the cup.
+3. Raised Platform: A raised base provides space to house the electronics.
+4. Separate Modules: The character and coaster are separate, allowing their positions to be adjusted independently.
+5. Arch Buddy: An arch supports the character and positions the sensor above the cup.
+
 <img width="300" height="300" alt="4891791929424_ pic" src="https://github.com/user-attachments/assets/ce96b3d1-98e1-49a9-be26-27c74d1629d9" />
 
-### Concept: Cup Companion
-
-Our idea is a small cardboard companion that waves when someone places a cup on a coaster. A proximity sensor detects the cup, and a servo moves the character’s arm. When the cup is removed, the arm returns to its resting position. We want to make putting down a drink feel a little more playful.
-
-We drew five physical layouts for this interaction:
-
-1. **Side Buddy:** The character stands beside the cup on a shared base. The sensor sits near the coaster, with the electronics inside the base.
-2. **Backboard Buddy:** The character and servo are mounted on a vertical panel behind the cup. The sensor faces the cup from the bottom of the panel.
-3. **Raised Platform:** A taller base supports the character and cup, leaving space underneath for the electronics and wires.
-4. **Separate Modules:** The character and coaster sit on separate bases connected by a cable, so their positions can be adjusted independently.
-5. **Arch Buddy:** The sensor faces downward from a cardboard arch above the cup, with the character attached to one side.
-
-
 **\*\*\*What questions do these sketches raise? What do you need to physically prototype to answer them?\*\*\***
-The sketches raised questions about sensor placement, arm movement, and stability. Can the sensor detect the cup without reacting to someone’s hand? Will different cup sizes affect detection? We need to compare sensor readings with the cup present, with it removed, and while someone picks it up. This will help us choose the sensor position and detection threshold.
 
-We also need to check whether the arm can wave without hitting the cup or the character’s body. We plan to mount a lightweight cardboard arm on the servo and try different angles and speeds. This should also show whether the servo mounting is secure enough.
+The sketches raised questions about sensor placement, arm clearance, and structural stability. Where should the sensor sit to reliably detect the cup? Could a hand placing the cup accidentally trigger the interaction? Would the waving arm hit the cup or backboard? Could the cardboard support the servo without bending or tipping?
+To answer these questions, we need to test sensor readings with and without a cup, try different cup positions, and prototype the arm’s movement and servo mounting.
 
-Finally, we need to build a rough cardboard base to check its size and stability. It should support the cup, leave enough room for the electronics, and keep wires out of the way when someone reaches for their drink.
 **\*\*\*Pick one design to prototype and explain why.\*\*\***
-We plan to prototype **Side Buddy**, the first design. The character and cup share one base, making the interaction easy to understand. The arm is visible beside the cup, and there is nothing above the cup to interfere with picking it up.
+We selected Design 2: Backboard Buddy because the vertical backboard provides a simple surface for mounting the character, sensor, and servo. The coaster gives users a clear place to put their cup, while the character remains visible above it. This arrangement also allows us to adjust component positions easily during testing.
+We plan to use a SparkFun VCNL4040 proximity sensor near the bottom of the backboard, facing the cup. The servo will be mounted behind the character’s shoulder and connected to a separate cardboard arm. The body will remain stationary while the arm waves.
 
-This design also seems easier to build and adjust. We can move the sensor around the coaster or change the arm position without rebuilding a larger structure. The base provides space for the Pi, servo driver, and wiring. We will start with this layout and adjust the placement after testing.
 Build a cardboard or other low-fidelity physical prototype of your design.
+
+We built a rough prototype using cardboard for the base, vertical backboard, circular coaster, character, and separate arm. We positioned the sensor near the bottom of the backboard and used a cup to explore the overall layout.
+The video documents the intended interaction through manual simulation. The character is temporarily held in place during the demonstration; automatic sensing and servo movement have not yet been integrated into this prototype.
+For the next iteration, we will secure the character’s body, mount the servo, and test the arm’s range of movement. We will also adjust the sensor position and detection threshold using readings with and without the cup.
 
 **\*\*\*Document your rough prototype with photos and/or video.\*\*\***
 
