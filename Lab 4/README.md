@@ -312,6 +312,10 @@ For the next iteration, we will secure the character’s body, mount the servo, 
 
 **\*\*\*Document your rough prototype with photos and/or video.\*\*\***
 
+https://github.com/user-attachments/assets/be559b14-1737-4aee-b715-68418387b1c3
+
+
+
 ---
 
 ## Part 2
