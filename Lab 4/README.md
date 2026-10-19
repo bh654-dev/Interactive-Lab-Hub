@@ -411,26 +411,40 @@ One limitation is that the sensor detects nearby objects, not cup identity. A ha
 We built and assembled the cardboard prototype, connected the hardware, and tested the interaction. ChatGPT helped develop the Python program, explain setup steps, and organize the documentation. The implementation uses the course examples for proximity sensing and Servo pHAT control.
 
 
+---
 
 ### Part F
 
-### Final Documentation
+### Looks Like
 
-Document all the prototypes and iterations you have designed and worked on! Again, deliverables for this lab are writings, sketches, photos, and videos that show what your prototype:
-* "Looks like": shows how the device should look, feel, sit, weigh, etc.
-* "Works like": shows what the device can do
-* "Acts like": shows how a person would interact with the device
+Cup Companion has a cardboard base, a circular coaster, and a vertical backboard featuring a smiling character. A separate cardboard arm provides the moving element. The proximity sensor is mounted on the front of the backboard, while the Pi and Servo pHAT remain beside the model.
 
----
+The assembly photos in Part E document the arm mechanism and sensor mounting. The demonstration video shows the overall appearance of the assembled prototype.
 
-## Deliverables \& Submission for Lab 4
+### Works Like
 
-The deliverables for this lab are, writings, sketches, photos, and videos that show what your prototype:
-* "Looks like": shows how the device should look, feel, sit, weigh, etc.
-* "Works like": shows what the device can do.
-* "Acts like": shows how a person would interact with the device.
+The VCNL4040 reads proximity values from the cup placement area. The Raspberry Pi uses these readings to trigger a servo-driven wave through the Servo pHAT.
 
-For submission, the readme.md page for this lab should be edited to include the work you have done:
-* Upload any materials that explain what you did, into your lab 4 repository, and link them in your lab 4 readme.md.
-* Link your Lab 4 readme.md in your main Interactive-Lab-Hub readme.md. 
+The arm waves three times and returns to rest. The program waits for the cup to be removed before resetting for another interaction.
+
+[View the sensing and actuation code](cup_companion.py)
+
+### Acts Like
+
+The user places a cup on the circular coaster, and the cardboard character responds by waving. The user can lift the cup and place it back to trigger another response. No separate button or screen interaction is required.
+
+For the Video please see part E -- Working Prototype Video
+
+### Prototype Development
+
+Our design developed through three stages:
+
+1. **Concept sketches:** We explored five arrangements of the character, sensor, actuator, and coaster. We selected the backboard design because it provided a simple mounting surface and kept the character visible.
+2. **Rough physical prototype:** We built the cardboard structure and manually simulated the intended interaction to explore the layout.
+3. **Integrated prototype:** We tested the sensor and servo, selected detection thresholds from measured readings, and attached the moving arm to the servo. We also explored a smaller movement range during assembly.
+
+The final prototype connects sensing, programmed movement, and a physical character to make an everyday drinking-related action playful. The development process showed that working code and electronics must be tested again within the physical structure.
+
+Process photos, the interaction diagram, testing details, and reflection are documented in Part E. The five design sketches and rough prototype are documented in Part D.
+ub readme.md. 
 * Labs are due on Mondays, make sure to submit your Lab 4 readme.md to Canvas.
