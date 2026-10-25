@@ -284,7 +284,6 @@ A 0.8B model is slow and sometimes wrong. It will invent events that are not in 
 
 \*\*\***Ask Qwen three questions to answer. Paste the questions, the answers and how long each took. Try one of them with `qwen3:0.6b` and compare.**\*\*\*
 
-<details>
 ### Question 1: Roosevelt Island history
 
 Prompt: “Tell me a bit about the history of Roosevelt Island.”
@@ -335,7 +334,6 @@ The model invented the person's identity and reason for being there. The log onl
 ### What I learned
 
 The models could produce fluent answers while adding unsupported details. For my observant system, I would give the model a narrow task and explicitly ask it not to infer identities, intentions, or events missing from the log. I would also keep the original readings available so users can check the summary.
-</details>
 
 <img width="500" height="300" alt="截屏2026-10-25 中午12 08 01" src="https://github.com/user-attachments/assets/243c3a3f-4492-4789-9ef6-62f2921feb9a" />
 
