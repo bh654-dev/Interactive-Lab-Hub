@@ -2,9 +2,9 @@
 
 **Team:**
 
-**Members:** Full Name (netid, github-handle), ...
+**Members:** Bowei Huang (bh654)
 
-**Project name:**
+**Project name:** Night Desk Watch
 
 <details>
 	<summary><strong>Instructions for Students (Click to Expand)</strong></summary>
