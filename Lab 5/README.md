@@ -1,6 +1,6 @@
 # Observant Systems: Overnight Sensation
 
-**Team:**
+**Team:** Individual
 
 **Members:** Bowei Huang (bh654)
 
