@@ -337,6 +337,9 @@ The model invented the person's identity and reason for being there. The log onl
 The models could produce fluent answers while adding unsupported details. For my observant system, I would give the model a narrow task and explicitly ask it not to infer identities, intentions, or events missing from the log. I would also keep the original readings available so users can check the summary.
 </details>
 
+<img width="500" height="300" alt="截屏2026-10-25 中午12 08 01" src="https://github.com/user-attachments/assets/243c3a3f-4492-4789-9ef6-62f2921feb9a" />
+
+
 
 ## Part E. 
 ### Connect: from YOLO readings to Qwen reasoning
