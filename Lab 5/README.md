@@ -373,6 +373,26 @@ Qwen (18.4 s):
 One person came in from the right, moved close to the camera, and left after about half a minute. ...
 ```
 
+### Connecting YOLO to Qwen
+
+I ran `yolo_to_qwen.py` for approximately one minute and tested moving across the frame, approaching the camera, and leaving its view. The program saved 20 readings to `watch_log.txt`. Qwen then took 53.2 seconds to generate a summary.
+
+The pipeline used YOLO to detect people, converted the boxes into readings such as left/close or center/close, and logged changes with timestamps. Qwen received these text readings rather than the camera images.
+
+### Checking the summary
+
+Most readings showed one person or nobody. At 12:17:29, the detector reported two people at center/close and left/far. The next reading returned to one person.
+
+Qwen claimed that the number of people increased from one to four. No reading recorded four people, so this claim was unsupported. Changes in position also do not establish that different people entered, since this log does not track individual identities.
+
+This test showed that getting the pipeline to run does not guarantee an accurate summary. For my overnight system, I would calculate the maximum detected count directly from the log and keep the original readings available for checking. A reading of “nobody” would mean no person was detected in the camera view, rather than proof that the room was empty.
+
+[View the recorded log](watch_log.txt)
+
+<img width="500" height="300" alt="截屏2026-10-25 中午12 19 22" src="https://github.com/user-attachments/assets/26c04d60-f3e8-44c1-bfaa-2b9e1f2bbefe" />
+
+<img width="500" height="300" alt="截屏2026-10-25 中午12 21 07" src="https://github.com/user-attachments/assets/2b5330ba-d6e0-4512-bc32-2f9aa2b535f1" />
+
 ---
 
 # Lab 5 Part 2: Overnight Sensation
