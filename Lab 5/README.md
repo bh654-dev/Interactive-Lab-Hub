@@ -285,7 +285,56 @@ A 0.8B model is slow and sometimes wrong. It will invent events that are not in 
 \*\*\***Ask Qwen three questions to answer. Paste the questions, the answers and how long each took. Try one of them with `qwen3:0.6b` and compare.**\*\*\*
 
 <details>
-  Q&A here
+### Question 1: Roosevelt Island history
+
+Prompt: “Tell me a bit about the history of Roosevelt Island.”
+
+Model: qwen3.5:0.8b  
+Time: 36.6 seconds
+
+Answer:
+“Roosevelt Island was originally built as a military fortification during World War II, later repurposed for housing and education. It is now a historic district featuring over 100 buildings that have been restored to reflect their original architectural styles. Today, it serves as a vital educational center for the Greater New York area and a popular destination for visitors interested in history and architecture.”
+
+The answer sounded confident, but its claim about the island's origin did not match the history provided in the lab.
+
+#### Comparison with qwen3:0.6b
+
+Time: 16.9 seconds
+
+Answer:
+“Roosevelt Island, a small island in the Pacific Ocean, has a rich and mysterious history. It was originally a remote and uninhabited island, but it became a significant location for the United States during the early 20th century. The island was chosen by the U.S. government as a base for the Pacific Fleet, which was stationed there during World War II. It became a symbol of the U.S. in the Pacific, and its history is closely tied to the broader story of the United States in the Pacific.”
+
+The smaller model was faster in this test, but described a different location instead of the New York island intended by the lab. Neither answer was reliable for this question. These were single runs, so the times also include differences in model loading and response length.
+
+### Question 2: Describing a photo
+
+Prompt: “What is in this photo?”  
+Image: snap.jpg  
+Model: qwen3.5:0.8b  
+Time: 52.3 seconds
+
+Answer:
+“This photo shows a close-up of a young person's face, focusing on their nose and mouth. They have dark hair and appear to be looking slightly off-camera.”
+
+The image request took the longest of my tests. I kept the original photo alongside the response so the description can be checked against it.
+
+### Question 3: Summarizing a supplied log
+
+Prompt: “A camera log says: 22:00 nobody; 22:05 one person; 22:10 nobody. Summarize what the camera detected. Can you tell who the person was?”
+
+This was a made-up test log supplied in the prompt, not a real camera recording.
+
+Model: qwen3.5:0.8b  
+Time: 10.6 seconds
+
+Answer:
+“The night watchman, a single person, arrived at the residence around 22:05 to check on the house. There were no other occupants present during this period.”
+
+The model invented the person's identity and reason for being there. The log only supported saying that one person was detected at 22:05, with nobody detected at 22:00 and 22:10. It could not establish who the person was or whether anyone was outside the camera view.
+
+### What I learned
+
+The models could produce fluent answers while adding unsupported details. For my observant system, I would give the model a narrow task and explicitly ask it not to infer identities, intentions, or events missing from the log. I would also keep the original readings available so users can check the summary.
 </details>
 
 
