@@ -315,7 +315,7 @@ Time: 52.3 seconds
 Answer:
 “This photo shows a close-up of a young person's face, focusing on their nose and mouth. They have dark hair and appear to be looking slightly off-camera.”
 
-The image request took the longest of my tests. I kept the original photo alongside the response so the description can be checked against it.
+The image request took the longest of my tests. 
 
 ### Question 3: Summarizing a supplied log
 
