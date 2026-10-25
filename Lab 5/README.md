@@ -136,7 +136,7 @@ pi@raspberrypi:~ $ ollama list
 
 \*\*\***Include a screenshot of `ollama list` showing your models.**\*\*\*
 
-<img width="400" height="300" alt="3481792937031_ pic" src="https://github.com/user-attachments/assets/5fab4314-0100-4be3-ae6c-182fa1fdcecb" />
+<img width="550" height="300" alt="3481792937031_ pic" src="https://github.com/user-attachments/assets/5fab4314-0100-4be3-ae6c-182fa1fdcecb" />
 
 
 ## Part B. 
