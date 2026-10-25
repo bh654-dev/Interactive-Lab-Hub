@@ -239,6 +239,19 @@ Consider how you might use this position based approach to create an interaction
 \*\*\***Include a screenshot or short video of the hand pose demo, and write how you might use face, hand or body pose tracking in your observant system.**\*\*\*
 
 
+
+https://github.com/user-attachments/assets/92b422d0-9d7a-4eda-83db-bb3ec5048300
+
+
+
+### Hand pose experiment
+
+I ran `hand_pose.py` through VNC and tested both gestures. Moving my thumb and index finger closer together lowered the displayed volume percentage, while moving them apart raised it. When I made the Quiet Coyote gesture, the screen showed “Quiet coyote!” and the percentage dropped to 0%.
+
+### Using hand tracking in my observant system
+
+I could use the Quiet Coyote gesture to start the night-time monitoring before bed. The device would play a short tone and display “Monitoring started” to confirm that it received the command. I would require the gesture to be held for two seconds to reduce accidental activation.
+
 ## Part D. 
 ### Reason: run Qwen on the Pi with Ollama
 
