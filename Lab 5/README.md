@@ -387,7 +387,7 @@ Qwen claimed that the number of people increased from one to four. No reading re
 
 This test showed that getting the pipeline to run does not guarantee an accurate summary. For my overnight system, I would calculate the maximum detected count directly from the log and keep the original readings available for checking. A reading of “nobody” would mean no person was detected in the camera view, rather than proof that the room was empty.
 
-[View the recorded log](watch_log.txt)
+[View the recorded log](legacy/watch_log.txt)
 
 <img width="500" height="300" alt="截屏2026-10-25 中午12 19 22" src="https://github.com/user-attachments/assets/26c04d60-f3e8-44c1-bfaa-2b9e1f2bbefe" />
 
