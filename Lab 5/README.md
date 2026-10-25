@@ -163,6 +163,53 @@ Then press q to quit and run it again with a flag. Each one changes a single thi
 
 \*\*\***Include a short video or screenshots of your experiments with the person detection. Write down three situations where it did not see you, or saw a person who was not there, and what you think the cause was.**\*\*\*
 
+### Person detection experiments
+
+I ran `yolo_person.py` and tested different positions, partial occlusion, and a photo displayed on my phone. When I was sitting sideways with my upper body visible, YOLO detected me with a confidence of 0.91.
+
+#### 1. A photo caused an extra person detection
+
+When I held a portrait photo on my phone in front of the camera, two overlapping person boxes appeared, with confidence scores of 0.53 and 0.58, although I was the only person physically present. The boxes were also poorly aligned. The portrait likely provided enough human features to trigger an additional detection. This shows a limitation of using person detection to count people in a room.
+
+<img width="300" height="300" alt="截屏2026-10-25 上午10 44 17" src="https://github.com/user-attachments/assets/95a7eb1f-b72c-4002-af74-70f4dc76be62" />
+
+
+#### 2. Heavy occlusion caused a missed detection
+
+When I hid my head and most of my body behind a cushion, YOLO did not detect me, even though part of my sleeve and arm remained visible. The cushion covered most of the features the model could use to recognize a person. With less coverage in an earlier test, it still detected me at 0.65 confidence.
+
+<img width="300" height="300" alt="截屏2026-10-25 上午10 58 13" src="https://github.com/user-attachments/assets/817b17c4-6fbc-45c8-a47a-6e73183646f1" />
+
+
+#### 3. Being mostly outside the frame caused a missed detection
+
+When I moved almost completely out of the camera view, a small part of my back was still visible at the left edge, but no person box appeared. The visible area was probably too small and lacked a recognizable body shape. This could make the system miss someone entering or leaving at the edge of the camera view.
+
+<img width="300" height="300" alt="截屏2026-10-25 上午11 01 53" src="https://github.com/user-attachments/assets/40c84124-8055-48a7-9b06-fadd98237620" />
+
+
+### Comparing confidence thresholds
+
+I tested `--conf 0.7` and `--conf 0.2` while keeping part of my body near the edge of the frame. At 0.7, no person box appeared. At 0.2, a similar position produced a detection with a confidence of 0.37. Lowering the threshold allowed a less certain detection to appear, while the higher threshold filtered it out. The positions were similar, but not exactly identical.
+
+<img width="300" height="300" alt="截屏2026-10-25 上午11 04 57" src="https://github.com/user-attachments/assets/4ebbc137-64e0-4b22-a6e2-df4143aba490" />
+<img width="300" height="300" alt="截屏2026-10-25 上午11 20 30" src="https://github.com/user-attachments/assets/1ad85e42-7a33-4e09-9a18-048cbbefea32" />
+
+
+
+### Other modes
+
+With `--all`, the model detected me as a person at 0.81 confidence and labeled the handheld device as a remote at 0.72 confidence.
+
+<img width="300" height="300" alt="截屏2026-10-25 上午11 09 38" src="https://github.com/user-attachments/assets/66e47e15-5313-4fac-9dc8-176f143b2bd6" />
+
+
+I also tested `--headless`. It ran without a camera window and printed the person's horizontal position, bounding-box height, confidence, and object count in the terminal. This would be useful when running the system over SSH or leaving it running overnight.
+
+<img width="300" height="300" alt="截屏2026-10-25 上午11 13 07" src="https://github.com/user-attachments/assets/dab1cefa-1b1a-4fa6-a1c1-3f33acd04008" />
+
+
+
 
 
 ## Part C. 
