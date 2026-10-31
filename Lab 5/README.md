@@ -1,4 +1,3 @@
-<img width="960" height="1280" alt="3591793459625_ pic" src="https://github.com/user-attachments/assets/1e5ac47c-3123-4f58-ad8f-bc0e44a9ca0d" />
 # Observant Systems: Overnight Sensation
 
 **Team:** Individual
