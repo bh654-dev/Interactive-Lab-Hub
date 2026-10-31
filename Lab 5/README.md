@@ -463,6 +463,13 @@ The revised script requires three consecutive matching readings before recording
 The hand-off: the person tells the device what to watch tonight, and the device acknowledges it. Keep it to a thirty-second ritual. A button or a touch (Lab 4), a spoken sentence (Lab 3), a wave or a Quiet Coyote at the camera (Part C). The acknowledgement can be a line on the display, a tone, or an LED that dims rather than lights up. At its simplest, the hand-off just sets the question that the morning will answer.
 
 \*\*\***Describe the interaction before.**\*\*\*
+Before bed, I check that the camera is pointed at the bottle and that the small light is on. Through an SSH terminal, I start the bottle-monitoring script inside a tmux session:
+
+python bottle_overnight.py --interval 10
+
+The terminal displays “night shift started, Ctrl-C to stop” to acknowledge the hand-off. The question for the morning is: “Did the bottle’s detection state change overnight?”
+
+Once the system is running, I detach from tmux. The Pi continues working independently after I disconnect my laptop. With the camera and lighting already prepared, starting the system takes less than thirty seconds.
 
 ## Part H. 
 ### Incorporate the observant system
@@ -477,6 +484,25 @@ The Part E pipeline becomes the night shift. `overnight.py` runs your `interpret
 Fake a night first: run it for thirty seconds while you walk around, stop it, and run `morning.py` from Part I. When that looks right, run a real night. If your storyboard needs a sensor rather than the camera, swap in the Lab 4 example code and log its reading the same way.
 
 \*\*\***Screenshots or videos of the running system.**\*\*\*
+I adapted the provided overnight script into bottle_overnight.py. It uses the YOLO NCNN model from Part 1 but limits detection to the bottle class. This avoids unrelated labels that appeared during the first test, including “suitcase” and “cell phone.”
+
+The pipeline is:
+
+Camera → YOLO bottle detection → confirmed detection state → timestamped log → morning summary.
+
+Each reading is either “bottle detected” or “bottle not detected.” The script requires three consecutive matching readings before accepting a state. It records the state only when it changes and writes periodic heartbeat entries to help show that the program is still running.
+
+Short test
+
+I first tested the system with the bottle in view, then removed it and placed it back. The test used a five-second sampling interval and produced these confirmed readings:
+
+2026-10-31T11:41:54 bottle detected
+2026-10-31T11:43:21 bottle not detected
+2026-10-31T11:44:18 bottle detected
+
+This showed that the system could record both disappearance from detection and reappearance. The timestamps indicate when a state was confirmed, rather than the exact moment the bottle moved. Requiring three matching readings reduces brief detection flicker, but cannot eliminate errors caused by lighting or obstruction.
+
+I saved this test separately as bottle_short_test.jsonl. For the real overnight run, I will use a ten-second interval inside tmux and record to bottle_night_log.jsonl. The overnight results will be added after that run.
 
 ## Part I. 
 ### Design the interaction after
@@ -488,6 +514,23 @@ The reveal. The night produced a log; the morning turns it into something a half
 ```
 
 Make it yours: show the report on the Mini PiTFT, read it aloud with Piper from Lab 3, plot the night as a timeline, or ask for JSON (`--json`, Part D) and move a servo. Whatever you pick, make sure it is honest about a night in which nothing happened.
+
+In the morning, I will reconnect to the Pi, stop the night script, and run bottle_morning.py. The script displays the confirmed readings and asks the locally installed qwen3:0.6b model to produce a report of no more than three sentences.
+
+The report appears as text in the terminal. Its purpose is to tell me whether the bottle’s detection state changed, without requiring me to read the entire log. The prompt tells the model not to infer who touched the bottle or assume that a missed detection proves movement.
+
+Short-test report
+
+I tested the morning script using bottle_short_test.jsonl. It returned:
+
+The morning report shows that a bottle was detected at 11:41, then not detected at 11:43, and detected again at 11:44. A missing detection could be due to poor lighting or obstruction. No physical movement was confirmed.
+
+The report matched the recorded sequence and acknowledged uncertainty. If only one confirmed state is recorded, the script tells the model that no further confirmed changes were logged. This does not prove that the bottle stayed still throughout the run.
+
+This report is from the short test. The actual overnight report will be added after the real night run.
+
+<img width="300" height="300" alt="截屏2026-10-31 中午12 31 47" src="https://github.com/user-attachments/assets/164fcb95-9a8c-4159-a5ed-56d2df09515d" />
+Morning report from the short test. The actual overnight report will be added after the overnight run.
 
 ## Final documentation
 
