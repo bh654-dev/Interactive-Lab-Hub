@@ -529,7 +529,7 @@ The report matched the recorded sequence and acknowledged uncertainty. If only o
 
 This report is from the short test. The actual overnight report will be added after the real night run.
 
-<img width="300" height="300" alt="截屏2026-10-31 中午12 31 47" src="https://github.com/user-attachments/assets/164fcb95-9a8c-4159-a5ed-56d2df09515d" />
+<img width="500" height="300" alt="截屏2026-10-31 中午12 31 47" src="https://github.com/user-attachments/assets/164fcb95-9a8c-4159-a5ed-56d2df09515d" />
 Morning report from the short test. The actual overnight report will be added after the overnight run.
 
 ## Final documentation
