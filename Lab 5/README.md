@@ -485,7 +485,7 @@ Fake a night first: run it for thirty seconds while you walk around, stop it, an
 
 \*\*\***Screenshots or videos of the running system.**\*\*\*
 
-<img width="500" height="300" alt="截屏2026-10-31 中午12 41 38" src="https://github.com/user-attachments/assets/50c85a9a-9779-4365-a05e-260b630b9f9d" />
+<img width="400" height="300" alt="截屏2026-10-31 中午12 41 38" src="https://github.com/user-attachments/assets/50c85a9a-9779-4365-a05e-260b630b9f9d" />
 
 I adapted the provided overnight script into bottle_overnight.py. It uses the YOLO NCNN model from Part 1 but limits detection to the bottle class. This avoids unrelated labels that appeared during the first test, including “suitcase” and “cell phone.”
 
@@ -506,6 +506,14 @@ I first tested the system with the bottle in view, then removed it and placed it
 This showed that the system could record both disappearance from detection and reappearance. The timestamps indicate when a state was confirmed, rather than the exact moment the bottle moved. Requiring three matching readings reduces brief detection flicker, but cannot eliminate errors caused by lighting or obstruction.
 
 I saved this test separately as bottle_short_test.jsonl. For the real overnight run, I will use a ten-second interval inside tmux and record to bottle_night_log.jsonl. The overnight results will be added after that run.
+
+### Code and short-test evidence
+
+- [Bottle monitoring script](bottle_overnight.py)
+- [Morning report script](bottle_morning.py)
+- [Recorded short-test log](bottle_short_test.jsonl)
+
+The screenshot above shows the recorded short-test readings. The actual overnight log and results will be added after the overnight run.
 
 ## Part I. 
 ### Design the interaction after
