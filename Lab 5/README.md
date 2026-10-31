@@ -428,12 +428,39 @@ Planned revisions: I will keep the camera in a fixed position and test which obj
 ## Prep for Part 2
 
 1. Look at and give feedback on the Part F storyboards.
-   **Put the feedback for your ideas here.**
+
+### Classmate feedback
+
+My classmate said the three-step interaction was easy to follow, but questioned whether the camera could recognize the book and cup in low light. They suggested testing the lighting before the overnight run. They also pointed out that missed detections could look like an object had been removed, so the morning report should not treat every missed detection as a real change. If nothing changes, the report should simply say that no changes were detected.
+
+### Updating the Lab Hub
+
+I fetched the upstream repository and checked `upstream/Fall2026`. Git reported that my branch was already up to date. Both `overnight.py` and `morning.py` were available on my Pi.
+
+### Overnight setup
+
+I am working individually. The device will sit beside my desk, with the camera pointed at a bottle rather than at my bed. I will keep the camera fixed and leave a small light on overnight. Before the run, I will check that the bottle can be detected under that lighting. If anyone else shares the space, I will get their permission before recording. Processing will stay on the Pi, and I will delete the snapshots after the demo.
+
+### Revisions based on feedback and testing
+
+The original storyboard used a book and a cup. During testing, I used a bottle and a speaker. The bottle was detected, but the system also reported unrelated labels such as “suitcase” and “cell phone.” I narrowed the project to observing the bottle.
+
+The revised script requires three consecutive matching readings before recording a detection-state change. The short test successfully logged “bottle detected,” “bottle not detected,” and “bottle detected” again. The morning report summarized these readings and explained that a missed detection does not confirm physical movement.
+
+### Revised storyboard
+
+1. **Before bed:** I position the bottle and camera, check the lighting, and start the script. The terminal confirms that recording has started.
+2. **While asleep:** The Pi checks for the bottle every ten seconds. It records a state change after three consecutive matching readings.
+3. **When awake:** I stop the recording and generate a short text report. The report describes detection changes and mentions uncertainty. If no further state changes were logged, it says so without claiming that the bottle never moved.
+
 2. [Update your Lab Hub](prep.md#get-the-latest-content) to get the latest content for Part 2.
 3. Decide where the device will spend the night and who else lives there. Get their OK before the first run.
 4. Revise your storyboard with the feedback and with what you learned in Part E about where the pipeline breaks.
 
 \*\*\***Post your revised storyboard here.**\*\*\*
+
+<img width="300" height="300" alt="3601793463751_ pic" src="https://github.com/user-attachments/assets/e2b9609d-daae-462b-a2f0-af21591edc9b" />
+
 
 ## Part G. 
 ### Design the interaction before
