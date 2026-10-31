@@ -1,3 +1,4 @@
+<img width="960" height="1280" alt="3591793459625_ pic" src="https://github.com/user-attachments/assets/1e5ac47c-3123-4f58-ad8f-bc0e44a9ca0d" />
 # Observant Systems: Overnight Sensation
 
 **Team:** Individual
@@ -418,6 +419,11 @@ Stuck? A kitchen that tells you who raided the fridge. A desk that reports wheth
 Use storyboards and/or [Verplank diagrams](https://ccrma.stanford.edu/courses/250a-fall-2004/IDSketchbok.pdf).
 
 \*\*\***Insert ideas, sketches, Verplank diagrams and storyboards for your night-time interaction here.**\*\*\*
+
+<img width="500" height="300" alt="3591793459625_ pic" src="https://github.com/user-attachments/assets/54fb161d-f1ae-45f4-ada3-8e72e946697c" />
+feedback: The three-step interaction is easy to follow. One concern is whether the camera can recognize the book and cup in low light. I should test the lighting before the overnight run. Missed detections could also look like an object was removed, so the morning report should avoid treating every missed detection as a real change. If nothing changes, it should simply say that no changes were detected.
+
+Planned revisions: I will keep the camera in a fixed position and test which objects it can recognize reliably. The morning report will describe detected changes and mention uncertainty when the readings are inconsistent.
 
 ## Prep for Part 2
 
