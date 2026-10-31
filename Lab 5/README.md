@@ -428,6 +428,9 @@ Planned revisions: I will keep the camera in a fixed position and test which obj
 ## Prep for Part 2
 
 1. Look at and give feedback on the Part F storyboards.
+2. [Update your Lab Hub](prep.md#get-the-latest-content) to get the latest content for Part 2.
+3. Decide where the device will spend the night and who else lives there. Get their OK before the first run.
+4. Revise your storyboard with the feedback and with what you learned in Part E about where the pipeline breaks.
 
 ### Classmate feedback
 
@@ -452,10 +455,6 @@ The revised script requires three consecutive matching readings before recording
 1. **Before bed:** I position the bottle and camera, check the lighting, and start the script. The terminal confirms that recording has started.
 2. **While asleep:** The Pi checks for the bottle every ten seconds. It records a state change after three consecutive matching readings.
 3. **When awake:** I stop the recording and generate a short text report. The report describes detection changes and mentions uncertainty. If no further state changes were logged, it says so without claiming that the bottle never moved.
-
-2. [Update your Lab Hub](prep.md#get-the-latest-content) to get the latest content for Part 2.
-3. Decide where the device will spend the night and who else lives there. Get their OK before the first run.
-4. Revise your storyboard with the feedback and with what you learned in Part E about where the pipeline breaks.
 
 \*\*\***Post your revised storyboard here.**\*\*\*
 
