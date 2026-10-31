@@ -438,7 +438,7 @@ I fetched the upstream repository and checked `upstream/Fall2026`. Git reported 
 
 ### Overnight setup
 
-I am working individually. The device will sit beside my desk, with the camera pointed at a bottle rather than at my bed. I will keep the camera fixed and leave a small light on overnight. Before the run, I will check that the bottle can be detected under that lighting. If anyone else shares the space, I will get their permission before recording. Processing will stay on the Pi, and I will delete the snapshots after the demo.
+I live alone, so no roommates share the recording space. The device will sit beside my desk, with the camera pointed at a bottle rather than at my bed. I will keep the camera fixed and leave a small light on overnight. Before the run, I will check that the bottle can be detected under that lighting. If anyone else shares the space, I will get their permission before recording. Processing will stay on the Pi, and I will delete the snapshots after the demo.
 
 ### Revisions based on feedback and testing
 
