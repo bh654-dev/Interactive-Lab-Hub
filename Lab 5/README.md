@@ -484,6 +484,9 @@ The Part E pipeline becomes the night shift. `overnight.py` runs your `interpret
 Fake a night first: run it for thirty seconds while you walk around, stop it, and run `morning.py` from Part I. When that looks right, run a real night. If your storyboard needs a sensor rather than the camera, swap in the Lab 4 example code and log its reading the same way.
 
 \*\*\***Screenshots or videos of the running system.**\*\*\*
+
+<img width="500" height="300" alt="截屏2026-10-31 中午12 41 38" src="https://github.com/user-attachments/assets/50c85a9a-9779-4365-a05e-260b630b9f9d" />
+
 I adapted the provided overnight script into bottle_overnight.py. It uses the YOLO NCNN model from Part 1 but limits detection to the bottle class. This avoids unrelated labels that appeared during the first test, including “suitcase” and “cell phone.”
 
 The pipeline is:
