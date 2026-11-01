@@ -601,6 +601,13 @@ Document all the prototypes and iterations you have designed and worked on. The 
 https://github.com/user-attachments/assets/f3778037-006e-4481-9ca4-b50d7ff3a6ce
 
 
+Video note
+
+The startup sequence is a daytime demonstration. The overnight log and morning report shown afterward are from the actual overnight run.
+
+Contributions
+
+I completed this lab with my teammate, including the hardware setup, testing, overnight recording, and video.
 
 As always, make sure you document contributions and ideas from others (and AI) explicitly in your writeup.
 
