@@ -513,7 +513,19 @@ I saved this test separately as bottle_short_test.jsonl. For the real overnight 
 - [Morning report script](bottle_morning.py)
 - [Recorded short-test log](bottle_short_test.jsonl)
 
-The screenshot above shows the recorded short-test readings. The actual overnight log and results will be added after the overnight run.
+The screenshot above shows the recorded short-test readings. 
+
+### Real overnight run
+
+I ran the system overnight on November 1, using a ten-second sampling interval inside tmux. The first log entry was at 01:33:34, and the final entry was at 10:46:30. I stopped the program at approximately 10:49. The camera stayed pointed at the bottle, with a nearby lamp left on.
+
+The log contained 145 entries: 54 heartbeats and 91 confirmed detection states, representing 90 state changes. The final confirmed state was “bottle detected” at 06:25:05. After that, the log continued recording heartbeats without further detection-state changes.
+
+I did not move the bottle or adjust the setup during the run. The repeated changes therefore did not correspond to deliberate movement. Requiring three matching readings reduced brief flicker during testing, but did not prevent longer periods of inconsistent detection overnight. Lighting, reflections, or the camera view may have contributed, but this experiment did not establish the cause.
+
+The main limitation is that this system measures detection state, not physical movement. It cannot reliably tell whether someone took or returned the bottle.
+
+[View the real overnight log](bottle_overnight_nov01.jsonl)
 
 ## Part I. 
 ### Design the interaction after
@@ -542,7 +554,28 @@ This report is from the short test. The actual overnight report will be added af
 
 <img width="500" height="300" alt="截屏2026-10-31 中午12 31 47" src="https://github.com/user-attachments/assets/164fcb95-9a8c-4159-a5ed-56d2df09515d" />
 
-Morning report from the short test. The actual overnight report will be added after the overnight run.
+Morning report from the short test. 
+
+### Actual overnight morning report
+
+The first morning report listed individual timestamps instead of summarizing them and was cut off at the output limit. I revised the prompt to provide computed statistics and the last confirmed state rather than the full sequence of readings.
+
+The revised report was:
+
+> The morning report shows 90 detection-state changes confirmed, indicating the bottle was detected multiple times. These changes don't confirm physical movement, as each state requires three consecutive samples. A missing detection could be due to poor lighting or obstruction.
+
+The revised report was short enough to read at a glance and correctly reported 90 detection-state changes. However, the three-sample rule only confirms consistency across samples; it does not establish whether the bottle physically moved. The report's suggested causes were possibilities, not findings established by the log.
+
+My takeaway was that the system ran overnight and produced a readable summary, but its detection was too inconsistent to serve as a reliable bottle-removal alert. Keeping the original log made it possible to check the summary and identify this limitation.
+
+- [Revised morning report](bottle_overnight_report.txt)
+- [Original truncated report](bottle_overnight_report_original.txt)
+- [Morning report script](bottle_morning.py)
+
+<img width="300" height="300" alt="截屏2026-11-01 上午11 04 56" src="https://github.com/user-attachments/assets/f95ec179-5ed4-4b25-8f89-c130c663626c" />
+
+Revised morning report generated from the real overnight log on November 1, 2026.
+
 
 ## Final documentation
 
