@@ -505,7 +505,7 @@ I first tested the system with the bottle in view, then removed it and placed it
 
 This showed that the system could record both disappearance from detection and reappearance. The timestamps indicate when a state was confirmed, rather than the exact moment the bottle moved. Requiring three matching readings reduces brief detection flicker, but cannot eliminate errors caused by lighting or obstruction.
 
-I saved this test separately as bottle_short_test.jsonl. For the real overnight run, I will use a ten-second interval inside tmux and record to bottle_night_log.jsonl. The overnight results will be added after that run.
+I saved this test separately as bottle_short_test.jsonl. For the real overnight run, I will use a ten-second interval inside tmux and record to bottle_night_log.jsonl.
 
 ### Code and short-test evidence
 
@@ -550,7 +550,7 @@ The morning report shows that a bottle was detected at 11:41, then not detected 
 
 The report matched the recorded sequence and acknowledged uncertainty. If only one confirmed state is recorded, the script tells the model that no further confirmed changes were logged. This does not prove that the bottle stayed still throughout the run.
 
-This report is from the short test. The actual overnight report will be added after the real night run.
+This report is from the short test. 
 
 <img width="600" alt="截屏2026-10-31 中午12 31 47" src="https://github.com/user-attachments/assets/164fcb95-9a8c-4159-a5ed-56d2df09515d" />
 
