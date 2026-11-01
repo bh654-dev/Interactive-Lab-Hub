@@ -32,14 +32,19 @@ else:
 
 prompt = f"""Write a short morning report about a bottle on a desk.
 Use only these recorded observations:
-{json.dumps(readings)}
+{json.dumps({
+    "first_log_entry": entries[0]["t"],
+    "last_log_entry": entries[-1]["t"],
+    "confirmed_state_changes": max(0, len(readings) - 1),
+    "last_confirmed_state": readings[-1],
+})}
 
 Facts: {facts}
 Each state required three consecutive matching samples.
 Timestamps mark confirmation, not the exact time of movement.
 A missing detection may be caused by poor lighting or obstruction.
 Do not claim anyone took, used, or returned the bottle.
-Do not invent an unusual event.
+Do not invent an unusual event. Summarize the number of detection-state changes, not individual timestamps. State that these changes do not confirm physical movement.
 Write at most three plain English sentences."""
 
 print("\nGenerating morning report...", flush=True)

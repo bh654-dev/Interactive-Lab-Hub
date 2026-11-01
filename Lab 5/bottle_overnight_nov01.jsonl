@@ -1,0 +1,145 @@
+{"t": "2026-11-01T01:33:34", "reading": "bottle detected"}
+{"t": "2026-11-01T01:33:34", "alive": true}
+{"t": "2026-11-01T01:43:43", "alive": true}
+{"t": "2026-11-01T01:53:53", "alive": true}
+{"t": "2026-11-01T01:56:15", "reading": "bottle not detected"}
+{"t": "2026-11-01T02:04:02", "alive": true}
+{"t": "2026-11-01T02:15:02", "alive": true}
+{"t": "2026-11-01T02:25:06", "alive": true}
+{"t": "2026-11-01T02:32:54", "reading": "bottle detected"}
+{"t": "2026-11-01T02:34:05", "reading": "bottle not detected"}
+{"t": "2026-11-01T02:35:36", "alive": true}
+{"t": "2026-11-01T02:41:52", "reading": "bottle detected"}
+{"t": "2026-11-01T02:43:54", "reading": "bottle not detected"}
+{"t": "2026-11-01T02:45:56", "alive": true}
+{"t": "2026-11-01T02:46:26", "reading": "bottle detected"}
+{"t": "2026-11-01T02:48:08", "reading": "bottle not detected"}
+{"t": "2026-11-01T02:49:49", "reading": "bottle detected"}
+{"t": "2026-11-01T02:58:17", "alive": true}
+{"t": "2026-11-01T03:00:19", "reading": "bottle not detected"}
+{"t": "2026-11-01T03:03:42", "reading": "bottle detected"}
+{"t": "2026-11-01T03:06:14", "reading": "bottle not detected"}
+{"t": "2026-11-01T03:07:05", "reading": "bottle detected"}
+{"t": "2026-11-01T03:07:35", "reading": "bottle not detected"}
+{"t": "2026-11-01T03:09:37", "reading": "bottle detected"}
+{"t": "2026-11-01T03:09:37", "alive": true}
+{"t": "2026-11-01T03:11:29", "reading": "bottle not detected"}
+{"t": "2026-11-01T03:19:46", "reading": "bottle detected"}
+{"t": "2026-11-01T03:19:46", "alive": true}
+{"t": "2026-11-01T03:20:37", "reading": "bottle not detected"}
+{"t": "2026-11-01T03:22:09", "reading": "bottle detected"}
+{"t": "2026-11-01T03:22:39", "reading": "bottle not detected"}
+{"t": "2026-11-01T03:24:31", "reading": "bottle detected"}
+{"t": "2026-11-01T03:27:34", "reading": "bottle not detected"}
+{"t": "2026-11-01T03:30:36", "alive": true}
+{"t": "2026-11-01T03:33:19", "reading": "bottle detected"}
+{"t": "2026-11-01T03:34:10", "reading": "bottle not detected"}
+{"t": "2026-11-01T03:38:03", "reading": "bottle detected"}
+{"t": "2026-11-01T03:39:55", "reading": "bottle not detected"}
+{"t": "2026-11-01T03:40:25", "reading": "bottle detected"}
+{"t": "2026-11-01T03:43:28", "reading": "bottle not detected"}
+{"t": "2026-11-01T03:43:28", "alive": true}
+{"t": "2026-11-01T03:44:29", "reading": "bottle detected"}
+{"t": "2026-11-01T03:45:00", "reading": "bottle not detected"}
+{"t": "2026-11-01T03:46:11", "reading": "bottle detected"}
+{"t": "2026-11-01T03:48:02", "reading": "bottle not detected"}
+{"t": "2026-11-01T03:50:24", "reading": "bottle detected"}
+{"t": "2026-11-01T03:51:05", "reading": "bottle not detected"}
+{"t": "2026-11-01T03:53:37", "alive": true}
+{"t": "2026-11-01T04:00:03", "reading": "bottle detected"}
+{"t": "2026-11-01T04:02:35", "reading": "bottle not detected"}
+{"t": "2026-11-01T04:03:06", "reading": "bottle detected"}
+{"t": "2026-11-01T04:03:36", "reading": "bottle not detected"}
+{"t": "2026-11-01T04:04:07", "reading": "bottle detected"}
+{"t": "2026-11-01T04:04:07", "alive": true}
+{"t": "2026-11-01T04:04:37", "reading": "bottle not detected"}
+{"t": "2026-11-01T04:05:18", "reading": "bottle detected"}
+{"t": "2026-11-01T04:06:09", "reading": "bottle not detected"}
+{"t": "2026-11-01T04:12:24", "reading": "bottle detected"}
+{"t": "2026-11-01T04:15:07", "reading": "bottle not detected"}
+{"t": "2026-11-01T04:15:07", "alive": true}
+{"t": "2026-11-01T04:16:38", "reading": "bottle detected"}
+{"t": "2026-11-01T04:18:19", "reading": "bottle not detected"}
+{"t": "2026-11-01T04:24:35", "reading": "bottle detected"}
+{"t": "2026-11-01T04:26:17", "alive": true}
+{"t": "2026-11-01T04:32:22", "reading": "bottle not detected"}
+{"t": "2026-11-01T04:36:36", "alive": true}
+{"t": "2026-11-01T04:38:18", "reading": "bottle detected"}
+{"t": "2026-11-01T04:41:00", "reading": "bottle not detected"}
+{"t": "2026-11-01T04:42:01", "reading": "bottle detected"}
+{"t": "2026-11-01T04:42:31", "reading": "bottle not detected"}
+{"t": "2026-11-01T04:44:23", "reading": "bottle detected"}
+{"t": "2026-11-01T04:45:34", "reading": "bottle not detected"}
+{"t": "2026-11-01T04:47:06", "alive": true}
+{"t": "2026-11-01T04:49:28", "reading": "bottle detected"}
+{"t": "2026-11-01T04:52:21", "reading": "bottle not detected"}
+{"t": "2026-11-01T04:55:13", "reading": "bottle detected"}
+{"t": "2026-11-01T04:56:35", "reading": "bottle not detected"}
+{"t": "2026-11-01T04:57:35", "alive": true}
+{"t": "2026-11-01T05:00:59", "reading": "bottle detected"}
+{"t": "2026-11-01T05:01:39", "reading": "bottle not detected"}
+{"t": "2026-11-01T05:02:40", "reading": "bottle detected"}
+{"t": "2026-11-01T05:06:34", "reading": "bottle not detected"}
+{"t": "2026-11-01T05:10:37", "reading": "bottle detected"}
+{"t": "2026-11-01T05:10:37", "alive": true}
+{"t": "2026-11-01T05:12:39", "reading": "bottle not detected"}
+{"t": "2026-11-01T05:13:30", "reading": "bottle detected"}
+{"t": "2026-11-01T05:17:34", "reading": "bottle not detected"}
+{"t": "2026-11-01T05:20:57", "alive": true}
+{"t": "2026-11-01T05:22:38", "reading": "bottle detected"}
+{"t": "2026-11-01T05:23:29", "reading": "bottle not detected"}
+{"t": "2026-11-01T05:24:30", "reading": "bottle detected"}
+{"t": "2026-11-01T05:25:01", "reading": "bottle not detected"}
+{"t": "2026-11-01T05:26:52", "reading": "bottle detected"}
+{"t": "2026-11-01T05:29:25", "reading": "bottle not detected"}
+{"t": "2026-11-01T05:31:06", "alive": true}
+{"t": "2026-11-01T05:35:00", "reading": "bottle detected"}
+{"t": "2026-11-01T05:38:33", "reading": "bottle not detected"}
+{"t": "2026-11-01T05:39:03", "reading": "bottle detected"}
+{"t": "2026-11-01T05:40:35", "reading": "bottle not detected"}
+{"t": "2026-11-01T05:41:26", "alive": true}
+{"t": "2026-11-01T05:42:57", "reading": "bottle detected"}
+{"t": "2026-11-01T05:44:18", "reading": "bottle not detected"}
+{"t": "2026-11-01T05:52:05", "alive": true}
+{"t": "2026-11-01T05:54:38", "reading": "bottle detected"}
+{"t": "2026-11-01T05:55:49", "reading": "bottle not detected"}
+{"t": "2026-11-01T05:58:01", "reading": "bottle detected"}
+{"t": "2026-11-01T05:58:31", "reading": "bottle not detected"}
+{"t": "2026-11-01T06:01:34", "reading": "bottle detected"}
+{"t": "2026-11-01T06:02:14", "reading": "bottle not detected"}
+{"t": "2026-11-01T06:02:14", "alive": true}
+{"t": "2026-11-01T06:04:26", "reading": "bottle detected"}
+{"t": "2026-11-01T06:05:07", "reading": "bottle not detected"}
+{"t": "2026-11-01T06:12:24", "alive": true}
+{"t": "2026-11-01T06:22:02", "reading": "bottle detected"}
+{"t": "2026-11-01T06:22:33", "alive": true}
+{"t": "2026-11-01T06:23:14", "reading": "bottle not detected"}
+{"t": "2026-11-01T06:23:54", "reading": "bottle detected"}
+{"t": "2026-11-01T06:24:25", "reading": "bottle not detected"}
+{"t": "2026-11-01T06:25:05", "reading": "bottle detected"}
+{"t": "2026-11-01T06:32:42", "alive": true}
+{"t": "2026-11-01T06:43:01", "alive": true}
+{"t": "2026-11-01T06:53:10", "alive": true}
+{"t": "2026-11-01T07:03:19", "alive": true}
+{"t": "2026-11-01T07:13:28", "alive": true}
+{"t": "2026-11-01T07:23:36", "alive": true}
+{"t": "2026-11-01T07:33:45", "alive": true}
+{"t": "2026-11-01T07:43:54", "alive": true}
+{"t": "2026-11-01T07:54:02", "alive": true}
+{"t": "2026-11-01T08:04:10", "alive": true}
+{"t": "2026-11-01T08:14:19", "alive": true}
+{"t": "2026-11-01T08:24:28", "alive": true}
+{"t": "2026-11-01T08:34:37", "alive": true}
+{"t": "2026-11-01T08:44:45", "alive": true}
+{"t": "2026-11-01T08:54:54", "alive": true}
+{"t": "2026-11-01T09:05:03", "alive": true}
+{"t": "2026-11-01T09:15:11", "alive": true}
+{"t": "2026-11-01T09:25:20", "alive": true}
+{"t": "2026-11-01T09:35:29", "alive": true}
+{"t": "2026-11-01T09:45:37", "alive": true}
+{"t": "2026-11-01T09:55:46", "alive": true}
+{"t": "2026-11-01T10:05:54", "alive": true}
+{"t": "2026-11-01T10:16:03", "alive": true}
+{"t": "2026-11-01T10:26:12", "alive": true}
+{"t": "2026-11-01T10:36:21", "alive": true}
+{"t": "2026-11-01T10:46:30", "alive": true}

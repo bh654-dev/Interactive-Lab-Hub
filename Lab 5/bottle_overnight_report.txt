@@ -1,0 +1,96 @@
+Desk Watch — detection log
+2026-11-01T01:33:34 bottle detected
+2026-11-01T01:56:15 bottle not detected
+2026-11-01T02:32:54 bottle detected
+2026-11-01T02:34:05 bottle not detected
+2026-11-01T02:41:52 bottle detected
+2026-11-01T02:43:54 bottle not detected
+2026-11-01T02:46:26 bottle detected
+2026-11-01T02:48:08 bottle not detected
+2026-11-01T02:49:49 bottle detected
+2026-11-01T03:00:19 bottle not detected
+2026-11-01T03:03:42 bottle detected
+2026-11-01T03:06:14 bottle not detected
+2026-11-01T03:07:05 bottle detected
+2026-11-01T03:07:35 bottle not detected
+2026-11-01T03:09:37 bottle detected
+2026-11-01T03:11:29 bottle not detected
+2026-11-01T03:19:46 bottle detected
+2026-11-01T03:20:37 bottle not detected
+2026-11-01T03:22:09 bottle detected
+2026-11-01T03:22:39 bottle not detected
+2026-11-01T03:24:31 bottle detected
+2026-11-01T03:27:34 bottle not detected
+2026-11-01T03:33:19 bottle detected
+2026-11-01T03:34:10 bottle not detected
+2026-11-01T03:38:03 bottle detected
+2026-11-01T03:39:55 bottle not detected
+2026-11-01T03:40:25 bottle detected
+2026-11-01T03:43:28 bottle not detected
+2026-11-01T03:44:29 bottle detected
+2026-11-01T03:45:00 bottle not detected
+2026-11-01T03:46:11 bottle detected
+2026-11-01T03:48:02 bottle not detected
+2026-11-01T03:50:24 bottle detected
+2026-11-01T03:51:05 bottle not detected
+2026-11-01T04:00:03 bottle detected
+2026-11-01T04:02:35 bottle not detected
+2026-11-01T04:03:06 bottle detected
+2026-11-01T04:03:36 bottle not detected
+2026-11-01T04:04:07 bottle detected
+2026-11-01T04:04:37 bottle not detected
+2026-11-01T04:05:18 bottle detected
+2026-11-01T04:06:09 bottle not detected
+2026-11-01T04:12:24 bottle detected
+2026-11-01T04:15:07 bottle not detected
+2026-11-01T04:16:38 bottle detected
+2026-11-01T04:18:19 bottle not detected
+2026-11-01T04:24:35 bottle detected
+2026-11-01T04:32:22 bottle not detected
+2026-11-01T04:38:18 bottle detected
+2026-11-01T04:41:00 bottle not detected
+2026-11-01T04:42:01 bottle detected
+2026-11-01T04:42:31 bottle not detected
+2026-11-01T04:44:23 bottle detected
+2026-11-01T04:45:34 bottle not detected
+2026-11-01T04:49:28 bottle detected
+2026-11-01T04:52:21 bottle not detected
+2026-11-01T04:55:13 bottle detected
+2026-11-01T04:56:35 bottle not detected
+2026-11-01T05:00:59 bottle detected
+2026-11-01T05:01:39 bottle not detected
+2026-11-01T05:02:40 bottle detected
+2026-11-01T05:06:34 bottle not detected
+2026-11-01T05:10:37 bottle detected
+2026-11-01T05:12:39 bottle not detected
+2026-11-01T05:13:30 bottle detected
+2026-11-01T05:17:34 bottle not detected
+2026-11-01T05:22:38 bottle detected
+2026-11-01T05:23:29 bottle not detected
+2026-11-01T05:24:30 bottle detected
+2026-11-01T05:25:01 bottle not detected
+2026-11-01T05:26:52 bottle detected
+2026-11-01T05:29:25 bottle not detected
+2026-11-01T05:35:00 bottle detected
+2026-11-01T05:38:33 bottle not detected
+2026-11-01T05:39:03 bottle detected
+2026-11-01T05:40:35 bottle not detected
+2026-11-01T05:42:57 bottle detected
+2026-11-01T05:44:18 bottle not detected
+2026-11-01T05:54:38 bottle detected
+2026-11-01T05:55:49 bottle not detected
+2026-11-01T05:58:01 bottle detected
+2026-11-01T05:58:31 bottle not detected
+2026-11-01T06:01:34 bottle detected
+2026-11-01T06:02:14 bottle not detected
+2026-11-01T06:04:26 bottle detected
+2026-11-01T06:05:07 bottle not detected
+2026-11-01T06:22:02 bottle detected
+2026-11-01T06:23:14 bottle not detected
+2026-11-01T06:23:54 bottle detected
+2026-11-01T06:24:25 bottle not detected
+2026-11-01T06:25:05 bottle detected
+
+Generating morning report...
+
+The morning report shows 90 detection-state changes confirmed, indicating the bottle was detected multiple times. These changes don't confirm physical movement, as each state requires three consecutive samples. A missing detection could be due to poor lighting or obstruction.
