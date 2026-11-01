@@ -572,7 +572,7 @@ My takeaway was that the system ran overnight and produced a readable summary, b
 - [Original truncated report](bottle_overnight_report_original.txt)
 - [Morning report script](bottle_morning.py)
 
-<img width="400" height="300" alt="截屏2026-11-01 上午11 04 56" src="https://github.com/user-attachments/assets/f95ec179-5ed4-4b25-8f89-c130c663626c" />
+<img width="450" height="300" alt="截屏2026-11-01 上午11 04 56" src="https://github.com/user-attachments/assets/f95ec179-5ed4-4b25-8f89-c130c663626c" />
 
 Revised morning report generated from the real overnight log on November 1, 2026.
 
