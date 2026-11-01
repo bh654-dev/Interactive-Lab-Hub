@@ -579,6 +579,15 @@ Revised morning report generated from the real overnight log on November 1, 2026
 
 ## Final documentation
 
+### Physical setup
+
+<img width="300" height="300" alt="3611793514474_ pic" src="https://github.com/user-attachments/assets/c437698d-a4cf-4429-9194-bfb3f38572b0" />
+
+<img width="300" height="300" alt="3621793515147_ pic" src="https://github.com/user-attachments/assets/1a482e3c-d650-411b-86f9-8f230e2c5981" />
+
+The overview photo shows the bottle, camera, and overnight lighting. I then moved the Pi from the chair onto the table, as shown in the close-up, while keeping the camera and bottle in place.
+
+
 Document all the prototypes and iterations you have designed and worked on. The deliverables for this lab are writings, sketches, photos, and videos that show what your system:
 
 * "Looks like": how the device sits in the room at night, and what it looks like at bedtime and in the morning.
