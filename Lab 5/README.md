@@ -607,7 +607,7 @@ The startup sequence is a daytime demonstration. The overnight log and morning r
 
 Contributions
 
-I completed this lab with my teammate, including the hardware setup, testing, overnight recording, and video.
+I completed this lab with my teammate, including the hardware setup, testing, overnight recording, and video. After the demo, I deleted 107 automatically captured snapshots from the Pi while keeping the detection logs, reports, code, and documentation photos.
 
 As always, make sure you document contributions and ideas from others (and AI) explicitly in your writeup.
 
