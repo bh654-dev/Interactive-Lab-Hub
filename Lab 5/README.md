@@ -1,8 +1,8 @@
 # Observant Systems: Overnight Sensation
 
-**Team:** Individual
+**Team:** Night Desk Watch
 
-**Members:** Bowei Huang (bh654)
+**Members:** Bowei Huang (bh654)，Shenye Wang (sw2486)
 
 **Project name:** Night Desk Watch
 
