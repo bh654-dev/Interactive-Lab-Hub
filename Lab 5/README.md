@@ -454,7 +454,7 @@ The revised script requires three consecutive matching readings before recording
 
 \*\*\***Post your revised storyboard here.**\*\*\*
 
-<img width="300" height="300" alt="3601793463751_ pic" src="https://github.com/user-attachments/assets/e2b9609d-daae-462b-a2f0-af21591edc9b" />
+<img width="600" alt="3601793463751_ pic" src="https://github.com/user-attachments/assets/e2b9609d-daae-462b-a2f0-af21591edc9b" />
 
 
 ## Part G. 
