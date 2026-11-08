@@ -62,6 +62,17 @@ mosquitto_pub -h farlab.infosci.cornell.edu -p 1883 -t 'IDD/test/yourname' -m 'H
 
 MQTT agrees on almost nothing in advance: you invent the topics and what the messages mean. Smart-home standards like Matter fix the vocabulary instead (every "light" behaves the same). Keep this trade-off in mind when you design your topics in Part C.
 
+1. Color Lock
+   Each person uses a Pi to detect a different target color. The Pis send their readings over MQTT. If everyone matches their color for two seconds, the group passes the level.
+2. Say Hello with Light
+   When someone moves close to one Pi, another Pi’s screen lights up. Holding a colored object near the sensor changes the color sent to the other person.
+3. Make Music Together
+   One person changes the sound with colors, another sets the rhythm with gestures, and a third controls the volume by moving closer to the sensor. Their Pis send messages to a computer that plays the music.
+4. Gesture Relay
+   Players take turns following gesture prompts. Each Pi detects its player’s gesture and sends a message to start the next turn. The group tries to finish the sequence as quickly as possible.
+5. Build a Story Together
+   Each Pi adds something to a shared story based on a sensor reading. A red object might add danger, an upward gesture might make a character climb, and a nearby hand might introduce someone new. The story appears on a shared screen.
+
 ---
 
 ## Part B: Collaborative Pixel Grid
@@ -126,6 +137,11 @@ Hold colored objects near sensor to change your pixel!
 ![Pixel grid with two devices](imgs/two-devices-grid.png)
 
 **📸 Include: Screenshot of grid + photo of your Pi setup**
+
+<img width="400" alt="截屏2026-11-08 下午4 51 03" src="https://github.com/user-attachments/assets/635cc801-8541-4854-b766-43348edbd703" />
+
+<img width="400" alt="3731794173964_ pic" src="https://github.com/user-attachments/assets/f10dca43-244e-4521-902f-b680a8be2645" />
+
 
 ---
 
