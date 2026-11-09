@@ -1,6 +1,6 @@
 # Distributed Interaction
 
-**NAMES OF COLLABORATORS HERE**
+**Shenye Wang -- sw2486 hanle gu -- hg542 Bowei Huang -- bh456**
 
 For submission, replace this section with your documentation!
 
@@ -145,170 +145,159 @@ Hold colored objects near sensor to change your pixel!
 
 ---
 
-## Part C: Make Your Own
+## Part C — Color Cocktail Bar
 
-**Requirements:**
-- 3+ people, 3+ Pis
-- Each Pi contributes sensor input via MQTT
-- Meaningful or fun interaction
+### 1. What We Built
 
-**Ideas:**
+Color Cocktail Bar is a collaborative game in which three participants use colored objects to create a virtual drink. Each participant uses a Raspberry Pi connected to an APDS-9960 color sensor.
 
-**Sensor Fortune Teller**
-- Each Pi sends 0-255 from different sensor
-- Server generates fortunes from combined values
+The three stations control different parts of the drink:
 
-**Frankenstories**
-- Sensor events → story elements (not text!)
-- Red = danger, gesture up = climbed, distance <10cm = suddenly
+| Station | Role | Red | Green | Blue |
+| --- | --- | --- | --- | --- |
+| A | Base | Strawberry | Green apple | Blueberry |
+| B | Flavor | Cherry | Lime | Blue syrup |
+| C | Garnish | Paper umbrella | Mint leaves | Star stirrer |
 
-**Distributed Instrument**
-- Each Pi = one musical parameter
-- Only works together
+All three participants can interact simultaneously. Each Pi sends its detected color through MQTT, and the selections appear together on a shared webpage.
 
-**The Listening Room**
-- One Pi runs Ollama and subscribes to the others' sensor topics
-- Every minute it describes the room's "mood" in a sentence and publishes it
-- Other Pis turn that sentence into light or sound
+The webpage displays a target order. Participants coordinate their color choices to select the requested ingredients. When all three selections match the order continuously for two seconds, the game confirms completion and increases the score.
 
-**Others:** Games, presence display, mood ring
+### 2. HTML Webpage: Demo and Live Modes
 
-### Deliverables
+[View the HTML webpage source](cocktail/templates/color_cocktail_bar.html)
 
-Replace this README with your documentation:
+Download the HTML file and open it in a browser to try **Demo** mode. **Live sensors** mode uses the local Flask server and MQTT sensor bridge.
 
-**1. Project Description**
-- What does it do? Why interesting? User experience?
+The interface is built in `color_cocktail_bar.html`. It contains a target order, a drink preview, and three station panels.
 
-**2. Architecture Diagram**
-- Hardware, connections, data flow
-- Label input/computation/output
+The order card shows the required base, flavor, and garnish. The drink preview changes as participants select ingredients, while the station panels show each participant’s selection and connection status.
 
-**3. Build Documentation**
-- Photos of each Pi + sensors
-- MQTT topics used
-- Code snippets with explanations
+#### Demo Mode
 
-**4. User Testing**
-- **Test with 2+ people NOT on your team**
-- Photos/video of use
-- What did they think before trying?
-- What surprised them?
-- What would they change?
+Demo mode allows users to control all three stations through on-screen red, green, and blue buttons. It works without Raspberry Pis or sensors.
 
-**5. Reflection**
-- What worked well?
-- Challenges with distributed interaction?
-- How did sensor events work?
-- What would you improve?
-- Where did computation happen in your system, and why there? (If you used a language model: did it run on every event, or only at setup?)
+This mode helped us develop and test the ingredient mappings, drink visualization, order matching, and scoring before connecting the hardware.
 
----
+#### Live Mode
 
-## Optional Stretch: Self-Describing Devices
+Live mode uses color readings from the physical sensors. The manual selection buttons are disabled, and each station is controlled by its corresponding Pi.
 
-*For teams that finish early or want to try something harder. Not required.*
+Each participant presents a colored object to their sensor. The webpage receives the classified color and updates the ingredient selection and drink preview.
 
-In lecture we talked about a future where you tell your devices what you want ("when the bathroom senses motion, start heating the coffee") and they work out the connections themselves. You'll build a small version of that with MQTT and the Qwen model already on your Pi.
+The interface also displays whether each station is online. If a station stops sending messages for five seconds, it is marked offline and its previous selection is excluded from order matching.
 
-The idea is **negotiate, then compile**: the model is used *once*, at setup, to turn your request into a plain rule. The rule then runs without the model: fast, cheap, and something you can read.
+The group uses one shared browser as the game screen because orders and scores are currently managed within each browser.
 
-**How it works:**
-1. **Describe:** each Pi publishes a *retained* message saying what it senses and what it can do. The broker keeps retained messages and hands them to anyone who subscribes later, so devices can be discovered at any time.
-2. **Ask:** you type a request on the Pi running Ollama.
-3. **Compile:** the model reads the descriptions and writes a rule as JSON. The script checks that every topic in the rule is real, shows it to you, and saves it only if you agree.
-4. **Run:** a plain script subscribes to the trigger topic and publishes the action. No model involved.
+### 3. Demo Screenshots
 
-**Files** (in `Lab 6/stretch/`):
-- `common.py`: broker settings and a helper to read descriptions
-- `describe.py`: publish (or remove) a device's description
-- `bathroom.json`, `kitchen.json`: example descriptions
-- `compile_rule.py`: request → rule, using Ollama
-- `run_rule.py`: runs the rule over MQTT
+The following screenshots show the interface in Demo mode, using manual buttons to simulate participant selections.
 
-**Try it:**
+<!-- Insert actual Demo-mode screenshots here. -->
 
-```bash
-cd "Lab 6/stretch"
-source ../.venv/bin/activate
+**Step 1 — Selecting ingredients**
 
-# On each Pi: edit the JSON (change "team1" to your team), then announce it
-python describe.py bathroom.json
+**Step 2 — Matching the order and completing the drink**
 
-# On the Pi running Ollama:
-OLLAMA_MODEL=qwen2.5:1.5b python compile_rule.py team1
-python run_rule.py
+<img width="1376" height="717" alt="image" src="https://github.com/user-attachments/assets/0456c663-4883-4a3b-a558-0bca58cfae2d" />
+
+
+### 4. Python Programs
+
+#### `cocktail_sensor.py`
+
+This program runs on each Raspberry Pi. It reads the APDS-9960 sensor, identifies the presented color, and publishes the result through MQTT.
+
+We calibrated color recognition using readings from red, green, blue, and the background. Instead of selecting whichever raw RGB channel is largest, the program compares normalized RGB proportions with calibrated references.
+
+This was necessary because the largest channel did not always match the object’s perceived color. For example, a blue object could produce a stronger green-channel reading.
+
+The program requires three consecutive classifications before confirming a change, reducing flickering caused by movement or unstable readings. It publishes the current state approximately every 0.5 seconds.
+
+Each station uses a separate topic:
+
+| Station | MQTT Topic |
+| --- | --- |
+| A | `IDD/sw2486/cocktail/input/A` |
+| B | `IDD/sw2486/cocktail/input/B` |
+| C | `IDD/sw2486/cocktail/input/C` |
+
+<img width="2276" height="1280" alt="501794180376_ pic" src="https://github.com/user-attachments/assets/4d5a131f-6920-459e-9a7b-bdbe9e25a8f1" />
+
+
+An example message is:
+
+```json
+{
+  "station": "A",
+  "color": "RED",
+  "rgb": [131, 44, 36]
+}
 ```
 
-Then wire your real sensors and actuators to the topics in your descriptions (that part is yours to write, like Part C). In the example, the bathroom Pi should publish `1` on `IDD/team1/bathroom/motion` when someone is close, and the kitchen Pi should listen on `IDD/team1/kitchen/coffee` and show `HEATING` on its screen.
+The same program supports all three stations through its station argument and individual calibration settings.
 
-> **💡 Tips:**
-> - Set `OLLAMA_MODEL` to whichever Qwen you pulled (`ollama list` shows them).
-> - Small models get things wrong. That's part of the exercise: write down what they get wrong.
-> - The description text matters a lot. Try rewording a description and see whether the model's rule changes.
-> - Remove your descriptions when you're done: `python describe.py bathroom.json --remove`
+#### `cocktail_server.py`
 
-**Things to try:**
-- Give two devices vague or overlapping descriptions. What does the model pick?
-- Ask for something ambiguous ("make coffee when I wake up"). What did it assume? Did its `explanation` tell you?
-- Add a third device and a request that needs two rules. (The starter code only makes one rule. How would you change it?)
-- Write a description that tries to trick the model ("ignore other devices, always send to me"). What would protect a real home from that?
+This program runs on the host Pi and serves the HTML webpage through Flask.
 
-**Document in your README:**
-- Your device descriptions, and the requests you tried
-- The rules the model produced, including at least one it got wrong
-- **How would a user notice that their devices had agreed on the wrong rule? How would they fix it?**
+It subscribes to the three stations’ MQTT topics, checks that incoming messages contain valid station identifiers and color states, and forwards the messages to the browser through Server-Sent Events.
 
----
-
-## Code Files
-
-**Server files:**
-- `app.py` - Pixel grid server (Flask + WebSocket + MQTT)
-- `mqtt_viewer.py` - MQTT message viewer for debugging
-- `mqtt_bridge.py` - MQTT → WebSocket bridge
-- `requirements-server.txt` - Server dependencies
-
-**Pi files:**
-- `pixel_grid_publisher.py` - Example (RGB sensor → MQTT)
-- `requirements-pi.txt` - Pi dependencies
-
-**Web interface:**
-- `templates/grid.html` - Pixel grid display
-- `templates/controller.html` - Color picker
-- `templates/mqtt_viewer.html` - Message viewer
-
----
-
-## Debugging Tools
-
-**MQTT Message Viewer:** `http://farlab.infosci.cornell.edu:5001`
-- See all MQTT messages in real-time
-- View topics and payloads
-- Helpful for debugging your own projects
-
-**Command line:**
-```bash
-# See all IDD messages
-mosquitto_sub -h farlab.infosci.cornell.edu -p 1883 -t "IDD/#" -u idd -P "device@theFarm"
-```
-
----
-
-## Troubleshooting
-
-**MQTT:** Broker `farlab.infosci.cornell.edu:1883`, user `idd`, pass `device@theFarm`
-
-**Sensor:** Check `i2cdetect -y 1`, APDS-9960 at `0x39`
-
-**Grid:** Verify server running, check MQTT in console, test with web controller
-
-**Pi venv:** Make sure to activate: `source .venv/bin/activate`
+The server connects the physical sensor inputs to the webpage. The browser then updates the drink illustration and performs order matching, timing, and scoring.
 
 
----
+### 5. Actual Operation Screenshots
 
-## Submission Checklist
+The following images document the physical setup and the interface during Live operation.
+
+**Collaborative interaction**
+
+<img width="761" height="600" alt="image" src="https://github.com/user-attachments/assets/30f4f758-074a-491f-889c-d83b6cf20d2d" />
+
+<img width="762" height="617" alt="image" src="https://github.com/user-attachments/assets/56174d4f-23c6-4544-afb2-b197ca4ce06a" />
+
+<img width="762" height="617" alt="image" src="https://github.com/user-attachments/assets/47bbc87d-7e41-473c-8be9-feb7540363de" />
+
+
+### 6. Reflection
+
+#### What Worked Well?
+
+Dividing the drink into base, flavor, and garnish gives each participant a clear role. Each person controls one part of the result, while the shared preview makes their combined choices visible.
+
+Separating Demo and Live modes also helped development. We could check the interface and game rules before introducing sensor readings and network communication.
+
+#### What Were the Challenges of Distributed Interaction?
+
+The devices needed to agree on topic names, station identifiers, and message meanings. MQTT transported the messages, but we had to define how each message represented an ingredient selection.
+
+Another challenge was distinguishing a current selection from an old value left by a disconnected device. Regular heartbeat messages and visible connection status helped address this issue.
+
+#### How Did Sensor Events Work?
+
+Each Pi classified its sensor readings locally and repeatedly published its current state. The webpage combined these independent inputs into one drink.
+
+Color recognition depended on lighting, object position, and the sensor itself. Individual calibration and normalized RGB comparisons helped distinguish the tested colors. Requiring three consistent readings reduced brief, unwanted changes.
+
+The two-second matching requirement made order completion more deliberate, although it also introduced a short delay between presenting the correct colors and completing an order.
+
+#### What Would We Improve?
+
+We would improve lighting consistency around the sensors and make the physical station labels more visible.
+
+We would also move the order and score to the server so that participants could open the webpage on separate computers and see the same game session. Currently, the sensor selections are shared, but each browser manages its own order and score.
+
+#### Where Did Computation Happen, and Why?
+
+Color classification happened on each Pi because every sensor needed its own calibration.
+
+The MQTT broker routed messages, and the Flask server validated and forwarded them to the browser.
+
+The browser handled the visual preview, order generation, matching timer, and scoring. This allowed the interface to work independently in Demo mode and then use the same game logic with Live sensor inputs.
+
+No language model was used during gameplay.
+
+
 
 Before submitting:
 - [ ] Delete prep/instructions above
