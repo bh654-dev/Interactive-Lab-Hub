@@ -259,6 +259,15 @@ The following images document the physical setup and the interface during Live o
 <img width="762" height="617" alt="image" src="https://github.com/user-attachments/assets/47bbc87d-7e41-473c-8be9-feb7540363de" />
 
 
+### User Testing
+
+We tested Color Cocktail Bar with two friends who were not on our team. Both thought the project was creative, fun, and well made. Neither suggested any specific changes.
+
+The feedback was positive, but we did not collect detailed responses about their expectations before trying the game or what surprised them. Those are questions we would include in a follow-up test.
+
+<img width="400" alt="42941794179288_ pic" src="https://github.com/user-attachments/assets/8ce9471f-477b-4123-b69c-71e01bafdbcf" />
+
+
 ### 6. Reflection
 
 #### What Worked Well?
