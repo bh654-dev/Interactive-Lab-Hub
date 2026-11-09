@@ -2,7 +2,6 @@
 
 **Shenye Wang -- sw2486 hanle gu -- hg542 Bowei Huang -- bh456**
 
-For submission, replace this section with your documentation!
 
 ---
 
@@ -245,6 +244,16 @@ It subscribes to the three stations’ MQTT topics, checks that incoming message
 
 The server connects the physical sensor inputs to the webpage. The browser then updates the drink illustration and performs order matching, timing, and scoring.
 
+```python
+def on_message(client, userdata, message):
+    data = validate_message(
+        message.topic, message.payload, message.retain
+    )
+    if data is not None:
+        broadcast(data)
+```
+
+This callback checks each MQTT message and forwards valid readings to connected browsers. Invalid messages are ignored.
 
 ### 5. Actual Operation Screenshots
 
